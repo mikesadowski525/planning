@@ -40,12 +40,14 @@
   nav ul {
     list-style: none; margin: 0 auto; padding: 10px 16px;
     max-width: 760px;
-    display: flex; gap: 6px; overflow-x: auto; justify-content: space-between;
+    display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px;
   }
   nav a {
-    display: block; padding: 6px 11px; border-radius: 999px;
+    display: block; padding: 6px 2px; border-radius: 12px; text-align: center;
     background: var(--card); border: 1px solid var(--line);
-    color: var(--text); text-decoration: none; font-size: .9rem; white-space: nowrap;
+    color: var(--text); text-decoration: none; font-size: .75rem; white-space: nowrap;
+  }
+  nav .ico { display: block; font-size: 1.1rem; line-height: 1.3;
   }
   main { max-width: 760px; margin: 0 auto; padding: 16px; }
   section {
@@ -62,6 +64,17 @@
   #events { --accent: var(--events); }
   #goals  { --accent: var(--goals); }
   #plans  { --accent: var(--plans); }
+  #howto  { --accent: #14b8a6; }
+  #howto details { border-top: 1px solid var(--line); padding: 12px 0; }
+  #howto details:first-of-type { border-top: 0; }
+  #howto summary { font-weight: 600; cursor: pointer; list-style: none; display: flex; justify-content: space-between; gap: 12px; }
+  #howto summary::-webkit-details-marker { display: none; }
+  #howto summary::after { content: "+"; color: var(--muted); font-weight: 400; }
+  #howto details[open] summary::after { content: "−"; }
+  .steps { margin: 8px 0 0; padding-left: 20px; font-size: .92rem; }
+  .steps li { margin: 6px 0; }
+  #howto .tag { margin: 0 4px 0 0; }
+  #howto > .meta { margin: -4px 0 8px; }
   ul.items { list-style: none; margin: 0; padding: 0; }
   ul.items li { padding: 12px 0; border-top: 1px solid var(--line); }
   ul.items li:first-child { border-top: 0; }
@@ -87,10 +100,11 @@
 
 <nav>
   <ul>
-    <li><a href="#ideas">💡 Ideas</a></li>
-    <li><a href="#events">📅 Events</a></li>
-    <li><a href="#goals">🎯 Goals</a></li>
-    <li><a href="#plans">🗺️ Plans</a></li>
+    <li><a href="#ideas"><span class="ico">💡</span>Ideas</a></li>
+    <li><a href="#events"><span class="ico">📅</span>Events</a></li>
+    <li><a href="#goals"><span class="ico">🎯</span>Goals</a></li>
+    <li><a href="#plans"><span class="ico">🗺️</span>Plans</a></li>
+    <li><a href="#howto"><span class="ico">🧰</span>How-to</a></li>
   </ul>
 </nav>
 
@@ -182,6 +196,88 @@
       <li><div class="title">Visual planner in Canva <span class="tag">Built</span></div><div class="meta">Nov 2026 – Apr 2027</div></li>
       <li><div class="title">This planning site <span class="tag">Live</span></div><div class="meta">Started Nov 25, 2026</div></li>
     </ul>
+  </section>
+  <section id="howto">
+    <h2>🧰 How-to</h2>
+    <p class="meta">From past chats. 👀 = seen in a chat, not re-checked · ✅ = verified · ⚠️ = unconfirmed</p>
+
+    <details>
+      <summary>Daily Agent Brief</summary>
+      <ul class="steps">
+        <li><b>BEST:</b> scheduled task. Runs in the cloud, even with phone and Mac off 👀</li>
+        <li><b>2ND BEST:</b> a Skill, which only runs when you ask 👀</li>
+        <li>Paid plans only (Pro, Max, Team, Enterprise) 👀</li>
+        <li>Set up: tell Claude what to do and when; it builds the task in the chat 👀</li>
+        <li>Find it: <b>≡ → Scheduled</b> 👀</li>
+        <li>Runs daily 9:44 AM CT: a push plus one email to yourself 👀</li>
+        <li>Covers: unanswered emails, commitments, calendar adds, TikTok ideas, promo drafts (max 2 Canva drafts per run, 1080×1920), local digest, new Drive footage, Slack 👀</li>
+        <li>Report-only: never replies or sends anything to other people 👀</li>
+        <li>Test: say <b>"run test"</b>. A "[TEST]" email arrives in a few minutes; Canva is skipped 👀</li>
+        <li>To change it, update the task. Don't make a new one, or you'll get duplicates 👀</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Connecting apps + text alerts</summary>
+      <ul class="steps">
+        <li>Google Drive: tap <b>Connect</b> on the card in chat, then say "drive done" 👀</li>
+        <li>Slack: <b>Connect → sign in → Allow</b>. "Request to install" means a Slack admin has to approve it 👀</li>
+        <li>Slack plan: sources disagreed on which Claude plans can use it ⚠️</li>
+        <li>Claude only reads Slack. It sends messages only when you ask 👀</li>
+        <li>AT&amp;T ended email-to-text in June 2025 ✅ (verified then)</li>
+        <li><b>BEST alerts:</b> push notifications, already on 👀</li>
+        <li><b>2ND BEST:</b> iMessage add-on. Free, but only works while the Mac is awake and Claude Desktop is open 👀</li>
+        <li>iMessage path: <b>Claude Desktop → Settings → Connectors → Browse connectors → iMessage → Install</b> 👀</li>
+        <li>Workflow: screenshot a texted ask → send it to Claude → it goes into Calendar or Reminders 👀</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Project rules setup + testing</summary>
+      <ul class="steps">
+        <li>Web: <b>claude.ai/projects → ORGANIZATION → Set project instructions → paste → Save instructions</b> ✅ (verified then)</li>
+        <li>iPhone: no confirmed way to edit project instructions ⚠️</li>
+        <li>The 21 rules are in the ORGANIZATION project ✅</li>
+        <li>No published instruction limit. Aim for about 1,500 characters 👀</li>
+        <li><span class="tag">To do</span> Profile settings still say "50 characters" and "never CapCut". Change both 👀</li>
+        <li>Test in a new ORGANIZATION chat 👀
+          <ol class="steps">
+            <li>Ask "What's rule #2?"</li>
+            <li>Ask something Claude can't know. It should ask for a screenshot.</li>
+            <li>Send a casual question. The reply should be one sentence.</li>
+            <li>Give a 3-step task. It should end with a "Done / Not done" list.</li>
+            <li>Push back on a correct answer. It should hold.</li>
+            <li>Repeat 1–3 on the web.</li>
+          </ol>
+        </li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Reddit starter</summary>
+      <ul class="steps">
+        <li>Join r/ClaudeAI, r/CapCut (not run by CapCut) and r/VideoEditing 👀</li>
+        <li>Join: <b>Reddit app → 🔍 → type the name → Join</b> 👀</li>
+        <li>Search: open the subreddit → 🔍 → 2–4 words → sort by Top, then Past year ⚠️ (button spot not confirmed)</li>
+        <li>Read the top 3 comments on busy posts 👀</li>
+        <li>For app tips, only trust posts under 3 months old ⚠️ (Claude's own rule)</li>
+        <li>Loop: screenshot → send to Claude → it turns it into steps and flags anything outdated 👀</li>
+        <li>First searches: "tips for non coders", "reusable template", "interview tips" 👀</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Visual planner</summary>
+      <ul class="steps">
+        <li><b>BEST:</b> iPhone Calendar + Reminders (month and day views, alerts) plus a Canva overview, since Canva is already paid for 👀</li>
+        <li><b>2ND BEST:</b> a web page you host yourself 👀</li>
+        <li>Canva: 9-page planner, Nov 2026 – Apr 2027, color-coded by project 👀</li>
+        <li>Phone adds: Claude sends the events, then tap <b>Allow</b> on the pop-up 👀</li>
+        <li>Adds time out in the Code tab ⚠️, so use a regular chat 👀</li>
+        <li>Alerts: 2 hrs, 1 day and 1 week before 👀</li>
+        <li><span class="tag">To do</span> No Calendar or Reminders adds confirmed yet. In a regular ORGANIZATION chat, say "add my planner events to my calendar and reminders" 👀</li>
+      </ul>
+    </details>
   </section>
 </main>
 
