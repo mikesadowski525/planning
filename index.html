@@ -75,6 +75,8 @@
   .steps li { margin: 6px 0; }
   #howto .tag { margin: 0 4px 0 0; }
   #howto > .meta { margin: -4px 0 8px; }
+  .paste { margin: 6px 0 0; padding: 8px 10px; background: var(--bg); border: 1px dashed var(--line); border-radius: 8px; font-family: ui-monospace, Menlo, monospace; font-size: .82rem; overflow-wrap: anywhere; }
+  #howto summary .tag { margin-left: auto; margin-right: 8px; }
   ul.items { list-style: none; margin: 0; padding: 0; }
   ul.items li { padding: 12px 0; border-top: 1px solid var(--line); }
   ul.items li:first-child { border-top: 0; }
@@ -199,7 +201,115 @@
   </section>
   <section id="howto">
     <h2>🧰 How-to</h2>
-    <p class="meta">From past chats. 👀 = seen in a chat, not re-checked · ✅ = verified · ⚠️ = unconfirmed</p>
+    <p class="meta">From past chats, newest first. 👀 = seen in a chat, not re-checked · ✅ = verified · ⚠️ = unconfirmed</p>
+
+    <details open>
+      <summary>📌 Open to-dos</summary>
+      <ul class="steps">
+        <li>Profile rules: remove "50 characters max" and "never LumaFusion/CapCut". They fight project rules 5 and 18 👀</li>
+        <li>Add line 0 to the top of the ORGANIZATION project instructions (see Handoff docs) ⚠️</li>
+        <li>Add planner events to Calendar + Reminders, in a regular ORGANIZATION chat (see Visual planner) 👀</li>
+        <li>Re-check the Nov and Jan–Apr grids in the Canva planner ⚠️</li>
+        <li>Answer: did "miles like nuts" mean milestones?</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>GitHub planning website <span class="tag">Done</span></summary>
+      <ul class="steps">
+        <li>The Code tab needs a GitHub repo: it copies the repo to the cloud and pushes changes back ✅</li>
+        <li>Free GitHub only publishes public sites; private sites need a paid plan ✅. Keep private info off the page</li>
+        <li>Create the repo: <b>GitHub → ≡ → All repositories → New</b> → name it, Public, Add README on → <b>Create repository</b> 👀</li>
+        <li><b>Claude app → Code tab → Connect GitHub</b> → approve 👀</li>
+        <li>Switch the repo chip to <b>planning · main</b> 👀</li>
+        <li>Claude works on a branch, not main ✅</li>
+        <li>Merging: automatic in this repo (CLAUDE.md rule) ✅</li>
+        <li>Pages (phone, signed in): <b>planning → More ▾ → Settings → Pages</b> → scroll below the menu list → Source <b>Deploy from a branch</b> → <b>None ▾ → main</b>, / (root) → <b>Save</b> ✅</li>
+        <li>Live at <b>mikesadowski525.github.io/planning</b>, about 1 min after each merge ✅</li>
+        <li>To update: paste new items in the Code tab; Claude edits, merges and checks the live page ✅</li>
+        <li>Status: all steps done Nov 25, 2026 ✅</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Visual planner</summary>
+      <ul class="steps">
+        <li><b>BEST:</b> iPhone Calendar + Reminders (month and day views, alerts) plus one Canva overview, since Canva is already paid for 👀</li>
+        <li><b>2ND BEST:</b> a coded web page you host yourself 👀</li>
+        <li>Canva: 9-page planner, Nov 2026 – Apr 2027, built straight in Canva, color-coded, no code 👀</li>
+        <li>Fixed: December dates, rehearsals moved to Sun–Wed, a typo, made-up Glamoré+ dates removed 👀</li>
+        <li><span class="tag">To do</span> The Nov and Jan–Apr grids were never re-checked ⚠️</li>
+        <li>Phone adds: Claude sends the events, then tap <b>Allow</b> on the pop-up 👀</li>
+        <li>Adds time out in the Code tab ⚠️, so use a regular ORGANIZATION chat and send:
+          <div class="paste">add my planner events to my calendar and reminders</div></li>
+        <li><span class="tag">To do</span> None of the Calendar or Reminders adds were confirmed yet 👀</li>
+        <li>Alerts: 2 hrs, 1 day and 1 week before 👀</li>
+        <li>Offered, not done: a soft "little push" idea box on each page 👀</li>
+        <li><span class="tag">To do</span> Unanswered: did "miles like nuts" mean milestones?</li>
+        <li>Cost: Calendar and Reminders are free; Canva is paid (you have it) 👀</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Project rules setup + testing</summary>
+      <ul class="steps">
+        <li>Path: <b>claude.ai/projects → ORGANIZATION → Set project instructions → paste → Save instructions</b> ✅ (web; iPhone path never confirmed ⚠️)</li>
+        <li>The 21 rules are in the ORGANIZATION project ✅</li>
+        <li>A title plus category headers is fine. No published length limit; aim for about 1,500 characters 👀</li>
+        <li>Rule 20 (priorities) goes stale. Update it when priorities change</li>
+        <li><span class="tag">To do</span> Profile preferences still say "50 characters max" and "never LumaFusion/CapCut". Change both, or they fight rules 5 and 18 👀</li>
+        <li>Profile path: <b>Settings → Your Claude (or Account) → Instructions</b> ✅ (web)</li>
+        <li>Test in a new ORGANIZATION chat 👀
+          <ol class="steps">
+            <li>Say "hi". The reply should be one sentence.</li>
+            <li>Ask "What's rule #2?"</li>
+            <li>Ask something Claude can't know. It should ask for a screenshot.</li>
+            <li>Give a 3-step task. It should end with a "Done / Not done" list.</li>
+            <li>Push back on a correct answer. It should hold.</li>
+            <li>Repeat 1–3 on the web.</li>
+          </ol>
+        </li>
+        <li>Type <b>RULES</b> any time to make Claude reread the rules and redo its last answer</li>
+        <li>Cost: project instructions may need a paid plan ⚠️ (one help page said so)</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Handoff docs for new chats</summary>
+      <ul class="steps">
+        <li>Two files in ORGANIZATION ✅: <b>mikey-handoff-brief.md</b> (what to work on) and <b>mikey-ai-operating-manual.md</b> (how to work)</li>
+        <li>Original: the Claude Doc "Mikey Handoff Brief — Nov 2026", with the ranked mistake table and check-ins 👀</li>
+        <li>Which rule wins: latest message → project instructions → manual → brief → old profile settings 👀</li>
+        <li>Check-ins are open items, not your mistakes 👀</li>
+        <li><span class="tag">To do</span> Project instructions don't tell new chats to read the manual ⚠️. Add this line at the top:
+          <div class="paste">0. Before your first reply in any chat, read claude/mikey-ai-operating-manual.md and claude/mikey-handoff-brief.md.</div></li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Claude iPhone app: Projects tab</summary>
+      <ul class="steps">
+        <li>The redesign started rolling out Nov 20, 2026: bottom tabs <b>Chat · Projects · Code · Artifacts</b> ✅ (4 sources)</li>
+        <li>No source said mobile can't create Projects ✅; none confirmed a New project button ⚠️</li>
+        <li>The instructions box only shows on the project's own page, not inside a chat 👀</li>
+        <li>Leaving a chat is fine. Don't delete it, because its history lives there 👀</li>
+        <li>Code tab needs GitHub (see GitHub planning website). Calendar and Reminders adds work better in a regular chat ⚠️</li>
+        <li>Chat search only covers the project you're in, or only non-project chats when outside one ✅</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Reddit starter</summary>
+      <ul class="steps">
+        <li>Join r/ClaudeAI, r/CapCut (not run by CapCut) and r/VideoEditing 👀</li>
+        <li>Join: <b>Reddit app → 🔍 → type the name → Join</b> 👀</li>
+        <li>Search: open the subreddit → 🔍 → 2–4 words → sort by Top, then Past year ⚠️ (button spot not confirmed)</li>
+        <li>Read the top 3 comments on busy posts 👀</li>
+        <li>For app tips, only trust posts under 3 months old ⚠️ (Claude's own rule)</li>
+        <li>Loop: screenshot → send to Claude → it turns it into steps and flags anything outdated 👀</li>
+        <li>First searches: "tips for non coders", "reusable template", "interview tips" 👀</li>
+      </ul>
+    </details>
 
     <details>
       <summary>Daily Agent Brief</summary>
@@ -229,53 +339,6 @@
         <li><b>2ND BEST:</b> iMessage add-on. Free, but only works while the Mac is awake and Claude Desktop is open 👀</li>
         <li>iMessage path: <b>Claude Desktop → Settings → Connectors → Browse connectors → iMessage → Install</b> 👀</li>
         <li>Workflow: screenshot a texted ask → send it to Claude → it goes into Calendar or Reminders 👀</li>
-      </ul>
-    </details>
-
-    <details>
-      <summary>Project rules setup + testing</summary>
-      <ul class="steps">
-        <li>Web: <b>claude.ai/projects → ORGANIZATION → Set project instructions → paste → Save instructions</b> ✅ (verified then)</li>
-        <li>iPhone: no confirmed way to edit project instructions ⚠️</li>
-        <li>The 21 rules are in the ORGANIZATION project ✅</li>
-        <li>No published instruction limit. Aim for about 1,500 characters 👀</li>
-        <li><span class="tag">To do</span> Profile settings still say "50 characters" and "never CapCut". Change both 👀</li>
-        <li>Test in a new ORGANIZATION chat 👀
-          <ol class="steps">
-            <li>Ask "What's rule #2?"</li>
-            <li>Ask something Claude can't know. It should ask for a screenshot.</li>
-            <li>Send a casual question. The reply should be one sentence.</li>
-            <li>Give a 3-step task. It should end with a "Done / Not done" list.</li>
-            <li>Push back on a correct answer. It should hold.</li>
-            <li>Repeat 1–3 on the web.</li>
-          </ol>
-        </li>
-      </ul>
-    </details>
-
-    <details>
-      <summary>Reddit starter</summary>
-      <ul class="steps">
-        <li>Join r/ClaudeAI, r/CapCut (not run by CapCut) and r/VideoEditing 👀</li>
-        <li>Join: <b>Reddit app → 🔍 → type the name → Join</b> 👀</li>
-        <li>Search: open the subreddit → 🔍 → 2–4 words → sort by Top, then Past year ⚠️ (button spot not confirmed)</li>
-        <li>Read the top 3 comments on busy posts 👀</li>
-        <li>For app tips, only trust posts under 3 months old ⚠️ (Claude's own rule)</li>
-        <li>Loop: screenshot → send to Claude → it turns it into steps and flags anything outdated 👀</li>
-        <li>First searches: "tips for non coders", "reusable template", "interview tips" 👀</li>
-      </ul>
-    </details>
-
-    <details>
-      <summary>Visual planner</summary>
-      <ul class="steps">
-        <li><b>BEST:</b> iPhone Calendar + Reminders (month and day views, alerts) plus a Canva overview, since Canva is already paid for 👀</li>
-        <li><b>2ND BEST:</b> a web page you host yourself 👀</li>
-        <li>Canva: 9-page planner, Nov 2026 – Apr 2027, color-coded by project 👀</li>
-        <li>Phone adds: Claude sends the events, then tap <b>Allow</b> on the pop-up 👀</li>
-        <li>Adds time out in the Code tab ⚠️, so use a regular chat 👀</li>
-        <li>Alerts: 2 hrs, 1 day and 1 week before 👀</li>
-        <li><span class="tag">To do</span> No Calendar or Reminders adds confirmed yet. In a regular ORGANIZATION chat, say "add my planner events to my calendar and reminders" 👀</li>
       </ul>
     </details>
   </section>
