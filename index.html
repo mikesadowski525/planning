@@ -75,6 +75,8 @@
   .steps li { margin: 6px 0; }
   #howto .tag { margin: 0 4px 0 0; }
   #howto > .meta { margin: -4px 0 8px; }
+  .paste { margin: 6px 0 0; padding: 8px 10px; background: var(--bg); border: 1px dashed var(--line); border-radius: 8px; font-family: ui-monospace, Menlo, monospace; font-size: .82rem; overflow-wrap: anywhere; }
+  #howto summary .tag { margin-left: auto; margin-right: 8px; }
   ul.items { list-style: none; margin: 0; padding: 0; }
   ul.items li { padding: 12px 0; border-top: 1px solid var(--line); }
   ul.items li:first-child { border-top: 0; }
@@ -128,7 +130,7 @@
       <li><div class="title">Footage map</div><div class="meta">Thumbnail PDF of clips from stage shoots · Apr 2026</div></li>
       <li><div class="title">Reusable templates</div><div class="meta">CapCut edits, Canva graphics, shot lists, caption cards</div></li>
       <li><div class="title">Free library makerspaces for studio gear</div><div class="meta">Apr 2026</div></li>
-      <li><div class="title">Spray-tan partner intro video</div></li>
+      <li><div class="title">Glamoré+ intro video <span class="tag">ASAP</span></div><div class="meta">Name, pronouns, role, filmed tan; IG collab with Glamoré+. Post the idea in Slack first</div></li>
       <li><div class="title">Frankenstein figurine photo bit</div><div class="meta">Nov 3</div></li>
       <li><div class="title">Matcha espresso martini name</div><div class="meta">Oct 16</div></li>
       <li><div class="title">Golden Girls bloopers video <span class="tag">Low priority</span></div><div class="meta">From the holiday show promo</div></li>
@@ -143,14 +145,16 @@
       <li><div class="title">Igloo (work)</div><div class="meta">Sat, Nov 28 · 8:30pm</div></li>
       <li><div class="title">Golden Girls 10th special · Milwaukee</div><div class="meta">Dec 10–12 + Dec 17–19 · 7:30pm</div></li>
       <li><div class="title">Golden Girls 10th matinees · Milwaukee</div><div class="meta">Sun, Dec 13 + Sun, Dec 20 · 2pm</div></li>
+      <li><div class="title">Health insurance: enroll for Jan 1 coverage <span class="tag">Deadline</span></div><div class="meta">Dec 15 · HealthCare.gov</div></li>
       <li><div class="title">MFF embargo starts</div><div class="meta">Jan 1, 2027 · No public screenings in the 7 local counties</div></li>
       <li><div class="title">Golden Girls · Racine</div><div class="meta">Sat, Jan 2, 2027 · 7pm</div></li>
       <li><div class="title">MFF mini doc deadline <span class="tag">Deadline</span></div><div class="meta">Jan 4, 2027</div></li>
+      <li><div class="title">Health insurance open enrollment ends <span class="tag">Deadline</span></div><div class="meta">Jan 15, 2027 · enrolling Dec 16 – Jan 15 starts coverage Feb 1</div></li>
       <li><div class="title">WI Drag Awards · Madison</div><div class="meta">Jan 17, 2027 · Theme: Radiant Red</div></li>
       <li><div class="title">Schitt's Creek drag parody</div><div class="meta">Spring 2027</div></li>
       <li><div class="title">Milwaukee Film Fest (MFF)</div><div class="meta">Apr 29 – May 13, 2027</div></li>
       <li><div class="title">Bar staff holiday party</div><div class="meta">Date TBD</div></li>
-      <li><div class="title">Ambassador thank-you party</div><div class="meta">Date TBD</div></li>
+      <li><div class="title">Glamoré+ thank-you party</div><div class="meta">Date TBD (none as of Nov 23)</div></li>
       <li class="past"><div class="title">Cast livestream <span class="tag">Past</span></div><div class="meta">Sep 27</div></li>
       <li class="past"><div class="title">Hocus Pocus drag parody <span class="tag">Past</span></div><div class="meta">Oct 1–4, 2026</div></li>
       <li class="past"><div class="title">Muumuus &amp; Mimosas day party <span class="tag">Past</span></div><div class="meta">Oct 2026 · exact date not saved</div></li>
@@ -175,7 +179,7 @@
       <li><div class="title">Searchable transcripts</div><div class="meta">To sort doc clips</div></li>
       <li><div class="title">Free up phone storage</div><div class="meta">Move footage to Drive</div></li>
       <li><div class="title">Make CapCut Pro the main editor</div><div class="meta">Canva second · Nov 2026</div></li>
-      <li><div class="title">Meet spray-tan partner requirements</div><div class="meta">Monthly, through Apr 1, 2027</div></li>
+      <li><div class="title">Meet Glamoré+ ambassador requirements</div><div class="meta">Monthly, Oct 1, 2026 – Apr 1, 2027 (see How-to)</div></li>
     </ul>
   </section>
 
@@ -189,7 +193,7 @@
       <li><div class="title">Hocus Pocus Madison promo edit</div></li>
       <li><div class="title">Season announcement Reel/TikTok</div><div class="meta">Canva + TikTok sounds · May 2026</div></li>
       <li><div class="title">Brand-ambassador content</div></li>
-      <li><div class="title">Monthly tan + content</div><div class="meta">Book a tan each month, post and upload within 72 hrs</div></li>
+      <li><div class="title">Monthly tan + content</div><div class="meta">Book at glamoreplus.com, then post + Slack upload within 72 hrs</div></li>
       <li><div class="title">Follow up on the field job</div><div class="meta">Jan 2027, if no word yet</div></li>
       <li><div class="title">Clear out half my stored stuff</div><div class="meta">Before the move · Oct</div></li>
       <li><div class="title">LLC, domain + Workspace setup</div><div class="meta">Apr 30, 2026</div></li>
@@ -199,83 +203,318 @@
   </section>
   <section id="howto">
     <h2>🧰 How-to</h2>
-    <p class="meta">From past chats. 👀 = seen in a chat, not re-checked · ✅ = verified · ⚠️ = unconfirmed</p>
+    <p class="meta">From past chats, newest first. 👀 = seen in a chat, not re-checked · ✅ = verified · ⚠️ = unconfirmed</p>
 
-    <details>
-      <summary>Daily Agent Brief</summary>
+    <details open>
+      <summary>📌 Open to-dos</summary>
       <ul class="steps">
-        <li><b>BEST:</b> scheduled task. Runs in the cloud, even with phone and Mac off 👀</li>
-        <li><b>2ND BEST:</b> a Skill, which only runs when you ask 👀</li>
-        <li>Paid plans only (Pro, Max, Team, Enterprise) 👀</li>
-        <li>Set up: tell Claude what to do and when; it builds the task in the chat 👀</li>
-        <li>Find it: <b>≡ → Scheduled</b> 👀</li>
-        <li>Runs daily 9:44 AM CT: a push plus one email to yourself 👀</li>
-        <li>Covers: unanswered emails, commitments, calendar adds, TikTok ideas, promo drafts (max 2 Canva drafts per run, 1080×1920), local digest, new Drive footage, Slack 👀</li>
-        <li>Report-only: never replies or sends anything to other people 👀</li>
-        <li>Test: say <b>"run test"</b>. A "[TEST]" email arrives in a few minutes; Canva is skipped 👀</li>
-        <li>To change it, update the task. Don't make a new one, or you'll get duplicates 👀</li>
+        <li>Profile rules: remove "50 characters max" and "never LumaFusion/CapCut". They fight project rules 5 and 18 👀</li>
+        <li>Add line 0 to the top of the ORGANIZATION project instructions (see Handoff docs) ⚠️</li>
+        <li>Add planner events to Calendar + Reminders, in a regular ORGANIZATION chat (see Visual planner) 👀</li>
+        <li>Re-check the Nov and Jan–Apr grids in the Canva planner ⚠️</li>
+        <li>Answer: did "miles like nuts" mean milestones?</li>
+        <li>Join r/ClaudeAI, r/CapCut and r/VideoEditing (not confirmed) ⚠️</li>
+        <li>Check the Impala VIN for free recalls with Chevy ⚠️</li>
       </ul>
     </details>
 
     <details>
-      <summary>Connecting apps + text alerts</summary>
+      <summary>GitHub planning website <span class="tag">Done</span></summary>
       <ul class="steps">
-        <li>Google Drive: tap <b>Connect</b> on the card in chat, then say "drive done" 👀</li>
-        <li>Slack: <b>Connect → sign in → Allow</b>. "Request to install" means a Slack admin has to approve it 👀</li>
-        <li>Slack plan: sources disagreed on which Claude plans can use it ⚠️</li>
-        <li>Claude only reads Slack. It sends messages only when you ask 👀</li>
-        <li>AT&amp;T ended email-to-text in June 2025 ✅ (verified then)</li>
-        <li><b>BEST alerts:</b> push notifications, already on 👀</li>
-        <li><b>2ND BEST:</b> iMessage add-on. Free, but only works while the Mac is awake and Claude Desktop is open 👀</li>
-        <li>iMessage path: <b>Claude Desktop → Settings → Connectors → Browse connectors → iMessage → Install</b> 👀</li>
-        <li>Workflow: screenshot a texted ask → send it to Claude → it goes into Calendar or Reminders 👀</li>
-      </ul>
-    </details>
-
-    <details>
-      <summary>Project rules setup + testing</summary>
-      <ul class="steps">
-        <li>Web: <b>claude.ai/projects → ORGANIZATION → Set project instructions → paste → Save instructions</b> ✅ (verified then)</li>
-        <li>iPhone: no confirmed way to edit project instructions ⚠️</li>
-        <li>The 21 rules are in the ORGANIZATION project ✅</li>
-        <li>No published instruction limit. Aim for about 1,500 characters 👀</li>
-        <li><span class="tag">To do</span> Profile settings still say "50 characters" and "never CapCut". Change both 👀</li>
-        <li>Test in a new ORGANIZATION chat 👀
-          <ol class="steps">
-            <li>Ask "What's rule #2?"</li>
-            <li>Ask something Claude can't know. It should ask for a screenshot.</li>
-            <li>Send a casual question. The reply should be one sentence.</li>
-            <li>Give a 3-step task. It should end with a "Done / Not done" list.</li>
-            <li>Push back on a correct answer. It should hold.</li>
-            <li>Repeat 1–3 on the web.</li>
-          </ol>
-        </li>
-      </ul>
-    </details>
-
-    <details>
-      <summary>Reddit starter</summary>
-      <ul class="steps">
-        <li>Join r/ClaudeAI, r/CapCut (not run by CapCut) and r/VideoEditing 👀</li>
-        <li>Join: <b>Reddit app → 🔍 → type the name → Join</b> 👀</li>
-        <li>Search: open the subreddit → 🔍 → 2–4 words → sort by Top, then Past year ⚠️ (button spot not confirmed)</li>
-        <li>Read the top 3 comments on busy posts 👀</li>
-        <li>For app tips, only trust posts under 3 months old ⚠️ (Claude's own rule)</li>
-        <li>Loop: screenshot → send to Claude → it turns it into steps and flags anything outdated 👀</li>
-        <li>First searches: "tips for non coders", "reusable template", "interview tips" 👀</li>
+        <li>The Code tab needs a GitHub repo: it copies the repo to the cloud and pushes changes back ✅</li>
+        <li>Free GitHub only publishes public sites; private sites need a paid plan ✅. Keep private info off the page</li>
+        <li>Create the repo: <b>GitHub → ≡ → All repositories → New</b> → name it, Public, Add README on → <b>Create repository</b> 👀</li>
+        <li><b>Claude app → Code tab → Connect GitHub</b> → approve 👀</li>
+        <li>Switch the repo chip to <b>planning · main</b> 👀</li>
+        <li>Claude works on a branch, not main ✅</li>
+        <li>Merging: automatic in this repo (CLAUDE.md rule) ✅</li>
+        <li>Pages (phone, signed in): <b>planning → More ▾ → Settings → Pages</b> → scroll below the menu list → Source <b>Deploy from a branch</b> → <b>None ▾ → main</b>, / (root) → <b>Save</b> ✅</li>
+        <li>Live at <b>mikesadowski525.github.io/planning</b>, about 1 min after each merge ✅</li>
+        <li>To update: paste new items in the Code tab; Claude edits, merges and checks the live page ✅</li>
+        <li>Status: all steps done Nov 25, 2026 ✅</li>
       </ul>
     </details>
 
     <details>
       <summary>Visual planner</summary>
       <ul class="steps">
-        <li><b>BEST:</b> iPhone Calendar + Reminders (month and day views, alerts) plus a Canva overview, since Canva is already paid for 👀</li>
-        <li><b>2ND BEST:</b> a web page you host yourself 👀</li>
-        <li>Canva: 9-page planner, Nov 2026 – Apr 2027, color-coded by project 👀</li>
+        <li><b>BEST:</b> iPhone Calendar + Reminders (month and day views, alerts) plus one Canva overview, since Canva is already paid for 👀</li>
+        <li><b>2ND BEST:</b> a coded web page you host yourself 👀</li>
+        <li>Canva: 9-page planner, Nov 2026 – Apr 2027, built straight in Canva, color-coded, no code 👀</li>
+        <li>Fixed: December dates, rehearsals moved to Sun–Wed, a typo, made-up Glamoré+ dates removed 👀</li>
+        <li><span class="tag">To do</span> The Nov and Jan–Apr grids were never re-checked ⚠️</li>
         <li>Phone adds: Claude sends the events, then tap <b>Allow</b> on the pop-up 👀</li>
-        <li>Adds time out in the Code tab ⚠️, so use a regular chat 👀</li>
+        <li>Adds time out in the Code tab ⚠️, so use a regular ORGANIZATION chat and send:
+          <div class="paste">add my planner events to my calendar and reminders</div></li>
+        <li><span class="tag">To do</span> None of the Calendar or Reminders adds were confirmed yet 👀</li>
         <li>Alerts: 2 hrs, 1 day and 1 week before 👀</li>
-        <li><span class="tag">To do</span> No Calendar or Reminders adds confirmed yet. In a regular ORGANIZATION chat, say "add my planner events to my calendar and reminders" 👀</li>
+        <li>Offered, not done: a soft "little push" idea box on each page 👀</li>
+        <li><span class="tag">To do</span> Unanswered: did "miles like nuts" mean milestones?</li>
+        <li>Cost: Calendar and Reminders are free; Canva is paid (you have it) 👀</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Project rules setup + testing</summary>
+      <ul class="steps">
+        <li>Path: <b>claude.ai/projects → ORGANIZATION → Set project instructions → paste → Save instructions</b> ✅ (web; iPhone path never confirmed ⚠️)</li>
+        <li>The 21 rules are in the ORGANIZATION project ✅</li>
+        <li>A title plus category headers is fine. No published length limit; aim for about 1,500 characters 👀</li>
+        <li>Rule 20 (priorities) goes stale. Update it when priorities change</li>
+        <li><span class="tag">To do</span> Profile preferences still say "50 characters max" and "never LumaFusion/CapCut". Change both, or they fight rules 5 and 18 👀</li>
+        <li>Profile path: <b>Settings → Your Claude (or Account) → Instructions</b> ✅ (web)</li>
+        <li>Test in a new ORGANIZATION chat 👀
+          <ol class="steps">
+            <li>Say "hi". The reply should be one sentence.</li>
+            <li>Ask "What's rule #2?"</li>
+            <li>Ask something Claude can't know. It should ask for a screenshot.</li>
+            <li>Give a 3-step task. It should end with a "Done / Not done" list.</li>
+            <li>Push back on a correct answer. It should hold.</li>
+            <li>Repeat 1–3 on the web.</li>
+          </ol>
+        </li>
+        <li>Type <b>RULES</b> any time to make Claude reread the rules and redo its last answer</li>
+        <li>Cost: project instructions may need a paid plan ⚠️ (one help page said so)</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Handoff docs for new chats</summary>
+      <ul class="steps">
+        <li>Two files in ORGANIZATION ✅: <b>mikey-handoff-brief.md</b> (what to work on) and <b>mikey-ai-operating-manual.md</b> (how to work)</li>
+        <li>Original: the Claude Doc "Mikey Handoff Brief — Nov 2026", with the ranked mistake table and check-ins 👀</li>
+        <li>Which rule wins: latest message → project instructions → manual → brief → old profile settings 👀</li>
+        <li>Check-ins are open items, not your mistakes 👀</li>
+        <li><span class="tag">To do</span> Project instructions don't tell new chats to read the manual ⚠️. Add this line at the top:
+          <div class="paste">0. Before your first reply in any chat, read claude/mikey-ai-operating-manual.md and claude/mikey-handoff-brief.md.</div></li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Claude iPhone app: Projects tab</summary>
+      <ul class="steps">
+        <li>The redesign started rolling out Nov 20, 2026: bottom tabs <b>Chat · Projects · Code · Artifacts</b> ✅ (4 sources)</li>
+        <li>No source said mobile can't create Projects ✅; none confirmed a New project button ⚠️</li>
+        <li>The instructions box only shows on the project's own page, not inside a chat 👀</li>
+        <li>Leaving a chat is fine. Don't delete it, because its history lives there 👀</li>
+        <li>Code tab needs GitHub (see GitHub planning website). Calendar and Reminders adds work better in a regular chat ⚠️</li>
+        <li>Chat search only covers the project you're in, or only non-project chats when outside one ✅</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Reddit starter</summary>
+      <ul class="steps">
+        <li>Join r/ClaudeAI, r/CapCut (fan-run, not CapCut's) and r/VideoEditing (beginner + intermediate editing) ✅</li>
+        <li>Join: <b>Reddit app → 🔍 → type the name → Join</b> 👀</li>
+        <li>Search: open the subreddit → 🔍 → 2–4 words → sort by <b>Top → Past year</b> ⚠️ (button spot not confirmed)</li>
+        <li>Open posts with lots of comments and read the top 3 👀</li>
+        <li>For app tips, only trust posts under 3 months old ⚠️ (Claude's rule, not Reddit's)</li>
+        <li>Loop: screenshot a post → send it to Claude → it turns it into steps and flags anything outdated 👀</li>
+        <li>First searches: "tips for non coders", "reusable template", "interview tips" 👀</li>
+        <li>Cost: free ✅ · <span class="tag">To do</span> Joined? Not confirmed ⚠️</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Health insurance enrollment</summary>
+      <ul class="steps">
+        <li>Wisconsin uses <b>HealthCare.gov</b> ✅</li>
+        <li>2027 open enrollment: Nov 1, 2026 – Jan 15, 2027 ✅</li>
+        <li>Enroll by <b>Dec 15</b> → coverage starts Jan 1 ✅</li>
+        <li>Enroll Dec 16 – Jan 15 → coverage starts Feb 1 ✅</li>
+        <li>After Jan 15 you need a special enrollment reason ✅</li>
+        <li>Free local help: HealthCare.gov's ZIP code search for an agent or assister ✅</li>
+        <li>Sign up only on the official site, to avoid scams ✅</li>
+        <li>Re-check the dates before you act ⚠️ (verified Nov 22)</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Glamoré+ ambassador</summary>
+      <ul class="steps">
+        <li>Term: Oct 1, 2026 – Apr 1, 2027 👀</li>
+        <li>Every month 👀
+          <ul class="steps">
+            <li>1–2 spray tans (meeting goal: 2), booked at <b>glamoreplus.com</b></li>
+            <li>2 posts, at least 1 a feed post or Reel, not only a Story</li>
+            <li>1 referral: write your name on the 10%-off card; they put your name in the booking notes</li>
+          </ul>
+        </li>
+        <li>During each visit: tag <b>@glamore.plus</b> in Stories or TikToks 👀</li>
+        <li>Within <b>72 hrs</b> of each tan: post it, and upload to Slack 3 photos (before, after, styled) + 1 video, 15–60 sec. Sunday doesn't count toward the 72 hrs 👀</li>
+        <li>No blurry, mirror, filtered, dim or screenshot files; send originals 👀</li>
+        <li>Rejected content: resend within 48 hrs 👀 · Keep originals 90 days 👀</li>
+        <li>FTC disclosure: "Glamoré+ Ambassador" or #GlamoréPlusAmbassador 👀</li>
+        <li>Slack: reply to DMs and @mentions within 48 hrs; keep notifications on 👀</li>
+        <li><span class="tag">To do</span> Intro video ASAP: name, pronouns, role, filmed tan, IG collab with Glamoré+. Drop the idea in Slack first so nobody repeats it 👀</li>
+        <li>Can't hit a month? Tell Hel before the month ends 👀</li>
+        <li>Thank-you party: no date as of Nov 23 ✅ (checked Slack)</li>
+        <li>Booking: pick a time with a free 72-hr window after it, around POP shifts 👀</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Daily Agent Brief</summary>
+      <ul class="steps">
+        <li><b>BEST:</b> scheduled task. Runs in the cloud, even with your phone off 👀</li>
+        <li><b>2ND BEST:</b> a Skill, which only runs when you ask 👀</li>
+        <li>Paid plans only (Pro, Max, Team, Enterprise) 👀</li>
+        <li>Set up: tell Claude what to do and when; it builds the task in the chat 👀</li>
+        <li>Find it: <b>≡ → Scheduled</b> 👀</li>
+        <li>Runs daily 9:44 AM CT: a push plus one email to you 👀</li>
+        <li>Report-only: never replies or sends anything to anyone else 👀</li>
+        <li>Sections 👀
+          <ul class="steps">
+            <li>⏰ Due soon (at the top)</li>
+            <li>Unanswered emails</li>
+            <li>Asks and commitments</li>
+            <li>Calendar adds</li>
+            <li>Slack + the Glamoré+ tracker</li>
+            <li>3 POP TikTok ideas</li>
+            <li>Promo drafts (max 2 new Canva drafts, 1080×1920)</li>
+            <li>Milwaukee LGBTQ/arts digest</li>
+            <li>New Drive footage</li>
+          </ul>
+        </li>
+        <li>Tags in the brief: ✅ verified, 👀 one source, ⚠️ guess 👀</li>
+        <li>Test: say <b>"run test"</b>. A "[TEST]" email arrives in a few minutes; Canva is skipped 👀</li>
+        <li>To change it, update the existing task. A new one causes duplicates 👀</li>
+        <li>Old version: paused 👀</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Connecting apps + text alerts</summary>
+      <ul class="steps">
+        <li>Gmail, Drive: tap <b>Connect</b> on the card in chat → approve 👀</li>
+        <li>Slack: <b>Connect → sign in → Allow</b> 👀</li>
+        <li>"Request to install" means a Slack admin must approve ✅</li>
+        <li>Claude reads Slack and only sends when you ask 👀</li>
+        <li>Which plans work with Slack: sources disagreed ⚠️</li>
+        <li>AT&amp;T shut off email-to-text ✅, so <b>BEST</b> = push notifications 👀</li>
+        <li><b>2ND BEST:</b> iMessage connector. Free, but only works while the Mac is awake with Claude Desktop open ✅</li>
+        <li>Path: <b>Claude Desktop → Settings → Connectors → Browse connectors → iMessage → Install</b> ✅</li>
+        <li>Status: skipped, since you're mostly on your phone 👀</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Adding events + reminders</summary>
+      <ul class="steps">
+        <li>Screenshot a text, email or appointment message → send it in a chat → Claude adds it 👀</li>
+        <li>Tap <b>Allow</b> on the pop-up 👀</li>
+        <li>Use a regular chat; it times out in the Code tab ⚠️</li>
+        <li>Alerts: 2 hrs, 1 day, 1 week before 👀</li>
+        <li>Events go on your <b>Work</b> calendar unless you name another 👀</li>
+        <li>A reminder with no time defaults to noon the next day 👀</li>
+        <li>Claude checks for duplicates before adding 👀</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Tracing where the brief got a fact</summary>
+      <ul class="steps">
+        <li>Ask <b>"where did you hear X?"</b> 👀</li>
+        <li>Claude checks its memory notes plus a Gmail search, then opens the actual email 👀</li>
+        <li>Example: "add weekday specials to POS" came from an Oct 16 email with an empty body and no deadline. The "due soon" was the brief's own guess 👀</li>
+        <li>Rule: brief wording can be inference, so check the source before acting 👀</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Car: 2012 Impala LTZ</summary>
+      <ul class="steps">
+        <li>3.6L V6, 6-speed automatic, FWD, E85-capable, 17-gal tank ✅</li>
+        <li>Oil: 6 qt dexos1 5W-30 full synthetic ✅</li>
+        <li>Change oil within 600 mi of "Change Engine Oil Soon", and at least once a year 👀</li>
+        <li>Reset the oil light: ignition ON, engine off → press the gas pedal to the floor 3× in 5 sec 👀</li>
+        <li>Check the dipstick between changes 👀</li>
+        <li>Tires: P235/50R18, 30 psi (confirm on the driver-door sticker) 👀</li>
+        <li>Wipers: 22" driver / 21" passenger ✅ · Battery: Group 34 👀</li>
+        <li>Maintenance 👀
+          <ul class="steps">
+            <li>Transmission fluid (Dexron VI) + spark plugs at 97,500 mi</li>
+            <li>Coolant at 150,000 mi</li>
+            <li>Cabin filter about every 22,500 mi ⚠️</li>
+          </ul>
+        </li>
+        <li>Free recalls ✅
+          <ul class="steps">
+            <li>Ignition key: keep it alone on its ring; a heavy ring can knock it out of RUN</li>
+            <li>Power steering hose: some cars built mid-2011</li>
+          </ul>
+        </li>
+        <li><span class="tag">To do</span> Check your VIN with Chevy ⚠️</li>
+        <li>Watch for: the traction control light and an "Engine Power Reduced" message 👀</li>
+        <li>Leather: damp cloth and mild soap only ⚠️ · Floor mats: never stack them ✅</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Selling items online</summary>
+      <ul class="steps">
+        <li>Photos: the full set, each item, then close-ups of every flaw. List every flaw in the description 👀</li>
+        <li><b>BEST:</b> Facebook Marketplace, no fees for local pickup ✅
+          <ol class="steps">
+            <li><b>Marketplace → Sell → Create listing → One item</b> ✅</li>
+            <li>Up to 10 photos → title, price, condition, category, description 👀</li>
+            <li><b>Next → List in more places</b> → pick groups → <b>Publish</b> 👀</li>
+            <li>Group missing? It's pending approval or not a buy/sell group. Once approved: <b>Share → Share to a Group</b> ⚠️</li>
+            <li>Leave <b>Promote listing</b> off; it's a paid ad ✅</li>
+          </ol>
+        </li>
+        <li>OfferUp ("OfferUp - Shop. Buy. Sell."): <b>Post → photos → details → Post</b>. Free for local pickup ✅</li>
+        <li>Craigslist: free for sale-by-owner posts ✅</li>
+        <li>Dive gear: try a local dive shop on consignment 👀</li>
+        <li>Safety: cash at pickup, never text anyone a code, and Zelle "upgrade" emails are fake 👀</li>
+        <li>Sold? Mark it sold everywhere. No bites in a week? Split the items up ⚠️</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Basement purge / move-out</summary>
+      <ul class="steps">
+        <li>Trunk keeps: spare tire, ice scraper, headlamp, chair, tent 👀</li>
+        <li>Bring everything into one area → list it → Claude builds a box map 👀</li>
+        <li>Supplies: HDX 27-gal totes ⚠️ (check the Home Depot app), trash bags, painter's tape, a Sharpie</li>
+        <li>Tape off zones: <b>KEEP · SELL · DONATE · GIVE · TRASH</b> 👀</li>
+        <li>Sort in this order 👀
+          <ol class="steps">
+            <li>Clothes: keep what fits and what you wore this year</li>
+            <li>Gear and tech: test it and wipe data ✅. Camera gear gets organized, not packed</li>
+            <li>Decor and canvases: check the backs for water damage</li>
+            <li>Papers and keepsakes last: toss anything moldy ✅</li>
+          </ol>
+        </li>
+        <li>Kitchen: keep the best pot and 4 of each dish 👀</li>
+        <li>Pack: label totes, keep them off the floor, fill them full (light bins float in floods) ✅</li>
+        <li>Out the same day
+          <ul class="steps">
+            <li>Goodwill: clothes and shoes; no furniture, no pickup ✅</li>
+            <li>Best Buy e-waste: 3 items a day ✅</li>
+            <li>Sell: list it that night</li>
+            <li>Give: set a pickup deadline</li>
+          </ul>
+        </li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Washing the mattress topper</summary>
+      <ul class="steps">
+        <li>Homemade peroxide + dish soap is OK; the tag allows non-chlorine bleach ✅</li>
+        <li>Let it sit about 1 hr, max a few hrs ✅</li>
+        <li>Large-capacity washer, or a laundromat's big front-loader ✅</li>
+        <li>Cold, gentle cycle, mild detergent 👀, a little under the normal line ✅</li>
+        <li>Optional non-chlorine bleach ✅
+          <ul class="steps">
+            <li>Clorox 2: line 1 (HE washer) or line 2 (standard)</li>
+            <li>OxiClean: line 1, dissolved in 16 oz of water, added to the drum first</li>
+          </ul>
+        </li>
+        <li>Low heat with 2–3 dryer balls; can take 2–3 cycles 👀</li>
+        <li>Squeeze the edges and center. Still damp? Dry it again 👀</li>
       </ul>
     </details>
   </section>
