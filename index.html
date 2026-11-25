@@ -79,6 +79,12 @@
   #howto summary .tag { margin-left: auto; margin-right: 8px; }
   #howto .group { margin: 16px 0 0; padding-top: 10px; border-top: 2px solid var(--line); color: var(--muted); font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; }
   #howto .group + details { border-top: 0; }
+  #howto details > .meta { margin: 6px 0 0; }
+  #howto .steps { overflow-wrap: anywhere; }
+  #howto .jump { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 6px; }
+  #howto .jump a { font-size: .75rem; padding: 4px 9px; border: 1px solid var(--line); border-radius: 999px; color: var(--text); text-decoration: none; background: var(--bg); }
+  #howto .group { scroll-margin-top: 80px; }
+  #howto a { color: #0d7d72; }
   ul.items { list-style: none; margin: 0; padding: 0; }
   ul.items li { padding: 12px 0; border-top: 1px solid var(--line); }
   ul.items li:first-child { border-top: 0; }
@@ -99,7 +105,7 @@
 
 <header>
   <h1>Planning</h1>
-  <p>Ideas, events, goals, and plans in one place.</p>
+  <p>Ideas, events, goals, plans and how-tos in one place.</p>
 </header>
 
 <nav>
@@ -151,8 +157,11 @@
       <li><div class="title">MFF embargo starts</div><div class="meta">Jan 1, 2027 · No public screenings in the 7 local counties</div></li>
       <li><div class="title">Golden Girls · Racine</div><div class="meta">Sat, Jan 2, 2027 · 7pm</div></li>
       <li><div class="title">MFF mini doc deadline <span class="tag">Deadline</span></div><div class="meta">Jan 4, 2027</div></li>
+      <li><div class="title">NDOW check-in</div><div class="meta">Jan 11, 2027 ⚠️ (from the planner, not confirmed)</div></li>
       <li><div class="title">Health insurance open enrollment ends <span class="tag">Deadline</span></div><div class="meta">Jan 15, 2027 · enrolling Dec 16 – Jan 15 starts coverage Feb 1</div></li>
       <li><div class="title">WI Drag Awards · Madison</div><div class="meta">Jan 17, 2027 · Theme: Radiant Red</div></li>
+      <li><div class="title">MFF final close</div><div class="meta">Feb 1, 2027</div></li>
+      <li><div class="title">MFF notification</div><div class="meta">Mar 26, 2027</div></li>
       <li><div class="title">Schitt's Creek drag parody</div><div class="meta">Spring 2027</div></li>
       <li><div class="title">Milwaukee Film Fest (MFF)</div><div class="meta">Apr 29 – May 13, 2027</div></li>
       <li><div class="title">Bar staff holiday party</div><div class="meta">Date TBD</div></li>
@@ -171,6 +180,7 @@
     <ul class="items">
       <li><div class="title">Learn Claude + Reddit <span class="tag">Top priority</span></div><div class="meta">Use r/ClaudeAI, r/CapCut, r/VideoEditing for current tips</div></li>
       <li><div class="title">Portfolio + website <span class="tag">#2 priority</span></div></li>
+      <li><div class="title">Post more consistently on POP TikTok</div></li>
       <li><div class="title">Get into MFF 2027</div><div class="meta">Any win counts</div></li>
       <li><div class="title">Best Production at WI Drag Awards</div></li>
       <li><div class="title">File my LLC</div><div class="meta">By end of 2026</div></li>
@@ -198,6 +208,7 @@
       <li><div class="title">Monthly tan + content</div><div class="meta">Book at glamoreplus.com, then post + Slack upload within 72 hrs</div></li>
       <li><div class="title">Follow up on the field job</div><div class="meta">Jan 2027, if no word yet</div></li>
       <li><div class="title">Clear out half my stored stuff</div><div class="meta">Before the move · Oct</div></li>
+      <li><div class="title">Decide whether to keep mikeyfacemedia.com</div><div class="meta">By Mar 2027 (renews every April)</div></li>
       <li><div class="title">LLC, domain + Workspace setup</div><div class="meta">Apr 30, 2026</div></li>
       <li><div class="title">Visual planner in Canva <span class="tag">Built</span></div><div class="meta">Nov 2026 – Apr 2027</div></li>
       <li><div class="title">This planning site <span class="tag">Live</span></div><div class="meta">Started Nov 25, 2026</div></li>
@@ -205,621 +216,1417 @@
   </section>
   <section id="howto">
     <h2>🧰 How-to</h2>
-    <p class="meta">From past chats, newest first. 👀 = seen in a chat, not re-checked · ✅ = verified · ⚠️ = unconfirmed</p>
+    <p class="meta">Every past chat, Apr 7 – Nov 25, 2026: ORGANIZATION, Mikey Face Media and chats outside projects. 👀 = seen in a chat · ✅ = verified · ⚠️ = not confirmed. Older steps were written for an iPhone 15 Pro Max on iOS 26.4, so some paths may have moved ⚠️. Left out: phone numbers, addresses, money, client work (Purse String / Golden Girls) and a friend's legal matter.</p>
+    <p class="jump"><a href="#h-storage">💾 Storage, files + transfers</a> <a href="#h-video">🎬 Video, camera + editing</a> <a href="#h-social">📣 Social, promo + film</a> <a href="#h-claude">🤖 Claude + AI</a> <a href="#h-planning">📅 Planning</a> <a href="#h-work">🍸 Work: POP + bar</a> <a href="#h-tech">💻 Mac, iPhone + TV</a> <a href="#h-accounts">🔐 Accounts, security + billing</a> <a href="#h-life">🏠 Life admin</a></p>
 
     <details open>
       <summary>📌 Open to-dos</summary>
-      <ul class="steps">
-        <li>Profile rules: remove "50 characters max" and "never LumaFusion/CapCut". They fight project rules 5 and 18 👀</li>
-        <li>Add line 0 to the top of the ORGANIZATION project instructions (see Handoff docs) ⚠️</li>
-        <li>Add planner events to Calendar + Reminders, in a regular ORGANIZATION chat (see Visual planner) 👀</li>
-        <li>Re-check the Nov and Jan–Apr grids in the Canva planner ⚠️</li>
-        <li>Answer: did "miles like nuts" mean milestones?</li>
-        <li>Join r/ClaudeAI, r/CapCut and r/VideoEditing (not confirmed) ⚠️</li>
-        <li>Check the Impala VIN for free recalls with Chevy ⚠️</li>
-        <li>Glamoré+ product photo shoot: Hel's Oct 12 DM + the availability form. Done? ⚠️</li>
-      </ul>
+<ul class="steps">
+<li>Profile rules: the CapCut fix + "50 characters max" (see Claude Instructions: the CapCut fix) 👀</li>
+<li>Add line 0 to the ORGANIZATION instructions (see Handoff brief) ⚠️</li>
+<li>Add planner events to Calendar + Reminders in a regular ORGANIZATION chat (see Visual planner) 👀</li>
+<li>Re-check the Nov, Jan and Apr Canva grids; tell Claude which date looked wrong ⚠️</li>
+<li>Health + dental insurance by Dec 15 (dental not researched yet) ✅</li>
+<li>Glamoré+: reply to Hel's photoshoot DM, fill out the availability form + Hel's survey, book the next tan, film the intro video ⚠️</li>
+<li>Join r/ClaudeAI, r/CapCut and r/VideoEditing ⚠️</li>
+<li>Call AT&amp;T about the phone trade-in 👀</li>
+<li>Check the Impala VIN for free recalls with Chevy ⚠️</li>
+<li>MFF doc: answer the open questions and ask MFF if social posts count as screenings (see MFF 2027 + Dairy Queenz doc) 👀</li>
+<li>Update the Daily Agent Brief and Stage Footage Map skill; both still list old apps or phone 👀</li>
+<li>Finish the dive gear listing (stopped at Publish) ⚠️</li>
+<li>Decide by Mar 2027 whether to keep mikeyfacemedia.com 👀</li>
+<li>Answer: did "miles like nuts" mean milestones?</li>
+</ul>
     </details>
-
-    <p class="group">From ORGANIZATION chats</p>
+    <p class="group" id="h-storage">💾 Storage, files + transfers</p>
 
     <details>
-      <summary>GitHub planning website <span class="tag">Done</span></summary>
-      <ul class="steps">
-        <li>The Code tab needs a GitHub repo: it copies the repo to the cloud and pushes changes back ✅</li>
-        <li>Free GitHub only publishes public sites; private sites need a paid plan ✅. Keep private info off the page</li>
-        <li>Create the repo: <b>GitHub → ≡ → All repositories → New</b> → name it, Public, Add README on → <b>Create repository</b> 👀</li>
-        <li><b>Claude app → Code tab → Connect GitHub</b> → approve 👀</li>
-        <li>Switch the repo chip to <b>planning · main</b> 👀</li>
-        <li>Claude works on a branch, not main ✅</li>
-        <li>Merging: automatic in this repo (CLAUDE.md rule) ✅</li>
-        <li>Pages (phone, signed in): <b>planning → More ▾ → Settings → Pages</b> → scroll below the menu list → Source <b>Deploy from a branch</b> → <b>None ▾ → main</b>, / (root) → <b>Save</b> ✅</li>
-        <li>Live at <b>mikesadowski525.github.io/planning</b>, about 1 min after each merge ✅</li>
-        <li>To update: paste new items in the Code tab; Claude edits, merges and checks the live page ✅</li>
-        <li>Status: all steps done Nov 25, 2026 ✅</li>
-      </ul>
-    </details>
-
-    <details>
-      <summary>Visual planner</summary>
-      <ul class="steps">
-        <li><b>BEST:</b> iPhone Calendar + Reminders (month and day views, alerts) plus one Canva overview, since Canva is already paid for 👀</li>
-        <li><b>2ND BEST:</b> a coded web page you host yourself 👀</li>
-        <li>Canva: 9-page planner, Nov 2026 – Apr 2027, built straight in Canva, color-coded, no code 👀</li>
-        <li>Fixed: December dates, rehearsals moved to Sun–Wed, a typo, made-up Glamoré+ dates removed 👀</li>
-        <li><span class="tag">To do</span> The Nov and Jan–Apr grids were never re-checked ⚠️</li>
-        <li>Phone adds: Claude sends the events, then tap <b>Allow</b> on the pop-up 👀</li>
-        <li>Adds time out in the Code tab ⚠️, so use a regular ORGANIZATION chat and send:
-          <div class="paste">add my planner events to my calendar and reminders</div></li>
-        <li><span class="tag">To do</span> None of the Calendar or Reminders adds were confirmed yet 👀</li>
-        <li>Alerts: 2 hrs, 1 day and 1 week before 👀</li>
-        <li>Offered, not done: a soft "little push" idea box on each page 👀</li>
-        <li><span class="tag">To do</span> Unanswered: did "miles like nuts" mean milestones?</li>
-        <li>Cost: Calendar and Reminders are free; Canva is paid (you have it) 👀</li>
-      </ul>
+      <summary>Mac storage cleanup (disk full, drives won&#x27;t mount)</summary>
+      <p class="meta">Apr 11 + Jul 30, 2026 · Free</p>
+<ul class="steps">
+<li>Check free space: Terminal → run "df -h /" ✅</li>
+<li>Ignore About This Mac → Storage categories (System Data / Other). Terminal "du" is the trustworthy source ⚠️</li>
+<li>Biggest home folders: "sudo du -sh ~/* | sort -h" 👀</li>
+<li>No-Terminal route: Finder → List view → sort by Size 👀</li>
+<li>Culprits found on your Mac: orphaned app containers in ~/Library/Containers, leftover folders in ~/Library/Application Support, Messages attachments 👀</li>
+<li>Messages attachments: confirm iCloud has synced first (scroll a few old threads; images load), then "rm -rf ~/Library/Messages/Attachments/*" 👀</li>
+<li>Then empty the Trash and clear Downloads 👀</li>
+<li>Never paste binary file contents into Terminal; it corrupts the session (Ctrl+C, then restart Terminal) ⚠️</li>
+</ul>
     </details>
 
     <details>
-      <summary>Project rules setup + testing</summary>
-      <ul class="steps">
-        <li>Path: <b>claude.ai/projects → ORGANIZATION → Set project instructions → paste → Save instructions</b> ✅ (web; iPhone path never confirmed ⚠️)</li>
-        <li>The 21 rules are in the ORGANIZATION project ✅</li>
-        <li>A title plus category headers is fine. No published length limit; aim for about 1,500 characters 👀</li>
-        <li>Rule 20 (priorities) goes stale. Update it when priorities change</li>
-        <li><span class="tag">To do</span> Profile preferences still say "50 characters max" and "never LumaFusion/CapCut". Change both, or they fight rules 5 and 18 👀</li>
-        <li>Profile path: <b>Settings → Your Claude (or Account) → Instructions</b> ✅ (web)</li>
-        <li>Test in a new ORGANIZATION chat 👀
-          <ol class="steps">
-            <li>Say "hi". The reply should be one sentence.</li>
-            <li>Ask "What's rule #2?"</li>
-            <li>Ask something Claude can't know. It should ask for a screenshot.</li>
-            <li>Give a 3-step task. It should end with a "Done / Not done" list.</li>
-            <li>Push back on a correct answer. It should hold.</li>
-            <li>Repeat 1–3 on the web.</li>
-          </ol>
-        </li>
-        <li>Type <b>RULES</b> any time to make Claude reread the rules and redo its last answer</li>
-        <li>Cost: project instructions may need a paid plan ⚠️ (one help page said so)</li>
-      </ul>
+      <summary>Mac Messages storage cleanup (second account)</summary>
+      <p class="meta">Oct 4, 2026 · Free</p>
+<ul class="steps">
+<li>Found: a second "mike" account using 115GB (72GB Library, 39GB Messages attachments) 👀</li>
+<li>Account sizes: "sudo du -sh /Users/* 2&gt;/dev/null" ⚠️ needs Terminal Full Disk Access; give it a few minutes</li>
+<li>Inside that account: "sudo sh -c 'du -sh /Users/mike/Library/* 2&gt;/dev/null' | sort -h | tail -10" ✅</li>
+<li>Before deleting attachments: in that account, Messages → Settings → iMessage → "Disable This Device" (not Delete). Keeps the iPhone/iCloud copies ✅</li>
+<li>Then: "sudo sh -c 'rm -rf /Users/mike/Library/Messages/Attachments/*'" (no output = success) 👀</li>
+<li>Clear all caches: that command got garbled in the copy. Ask Claude for the exact command before running anything ⚠️</li>
+</ul>
     </details>
 
     <details>
-      <summary>Handoff docs for new chats</summary>
-      <ul class="steps">
-        <li>Two files in ORGANIZATION ✅: <b>mikey-handoff-brief.md</b> (what to work on) and <b>mikey-ai-operating-manual.md</b> (how to work)</li>
-        <li>Original: the Claude Doc "Mikey Handoff Brief — Nov 2026", with the ranked mistake table and check-ins 👀</li>
-        <li>Which rule wins: latest message → project instructions → manual → brief → old profile settings 👀</li>
-        <li>Check-ins are open items, not your mistakes 👀</li>
-        <li><span class="tag">To do</span> Project instructions don't tell new chats to read the manual ⚠️. Add this line at the top:
-          <div class="paste">0. Before your first reply in any chat, read claude/mikey-ai-operating-manual.md and claude/mikey-handoff-brief.md.</div></li>
-      </ul>
+      <summary>iPhone → Mac → Google Drive footage</summary>
+      <p class="meta">Apr 11 + Apr 23, 2026 · Free · <a href="https://claude.ai/chat/ed13d606-65f9-4c5b-8558-8bfe19a5ad8d">https://claude.ai/chat/ed13d606-65f9-4c5b-8558-8bfe19a5ad8d</a></p>
+<ul class="steps">
+<li>Goal: iPhone videos sync to the Mac through iCloud Photos, then go to Google Drive 👀</li>
+<li>Stop iCloud filling the Mac: Photos app → Photos menu → Settings → iCloud → check <b>Optimize Mac Storage</b> 👀</li>
+<li>Watch a work video right now: <a href="https://www.icloud.com">https://www.icloud.com</a> → Photos → click it (plays in the browser) ✅</li>
+<li>The Drive app on iPhone (+ → Upload) is slow; phone uploads are throttled 👀</li>
+<li>Fastest, most reliable import ✅<ol class="steps">
+<li>Plug the iPhone into the Mac, unlock it, tap Trust</li>
+<li>Cmd+Space → "Image Capture" → Enter → pick your iPhone</li>
+<li>Import To: choose a folder → Import All</li>
+</ol>
+</li>
+<li>Only favorites: Photos on Mac → your iPhone under Devices → Favorites → Import Selected ⚠️ (not confirmed the import screen shows albums)</li>
+<li>What you did once: exported 163 favorites from Photos on the iPhone (it downloads from iCloud first; don't cancel) → Save to Files → Google Drive 👀 (needs the Drive app ⚠️)</li>
+<li>Big files: USB to the Mac, then drag them into <a href="https://drive.google.com">https://drive.google.com</a> in a browser 👀</li>
+<li>Upload fewer large .MOV files at a time; Drive chokes on many at once ⚠️</li>
+<li>Don't delete anything until it's all in Drive and plays (spot-check a few) 👀</li>
+<li>Plug the Mac in first 👀</li>
+</ul>
     </details>
 
     <details>
-      <summary>Claude iPhone app: Projects tab</summary>
-      <ul class="steps">
-        <li>The redesign started rolling out Nov 20, 2026: bottom tabs <b>Chat · Projects · Code · Artifacts</b> ✅ (4 sources)</li>
-        <li>No source said mobile can't create Projects ✅; none confirmed a New project button ⚠️</li>
-        <li>The instructions box only shows on the project's own page, not inside a chat 👀</li>
-        <li>Leaving a chat is fine. Don't delete it, because its history lives there 👀</li>
-        <li>Code tab needs GitHub (see GitHub planning website). Calendar and Reminders adds work better in a regular chat ⚠️</li>
-        <li>Chat search only covers the project you're in, or only non-project chats when outside one ✅</li>
-      </ul>
+      <summary>Flash drive with iPhone</summary>
+      <p class="meta">Jul 30, 2026 · Free</p>
+<ul class="steps">
+<li>Open the drive: Files → Browse → Locations → tap the drive 👀</li>
+<li>Move photos/videos: Photos → select → Share → <b>Save to Files</b> → pick the drive 👀</li>
+<li>Files has no eject button. Wait for the copy to finish, then unplug ⚠️</li>
+</ul>
     </details>
 
     <details>
-      <summary>Claude chat tips</summary>
-      <ul class="steps">
-        <li>Long chats auto-summarize and blur small details. Ask Claude to keep a running list 👀</li>
-        <li>Tap-to-answer mode: ask for multiple-choice questions with a recommended pick 👀</li>
-        <li>Type <b>RULES</b> to make Claude reread your rules and redo its last answer</li>
-      </ul>
-    </details>
-
-    <details>
-      <summary>Reddit starter</summary>
-      <ul class="steps">
-        <li>Join r/ClaudeAI, r/CapCut (fan-run, not CapCut's) and r/VideoEditing (beginner + intermediate editing) ✅</li>
-        <li>Join: <b>Reddit app → 🔍 → type the name → Join</b> 👀</li>
-        <li>Search: open the subreddit → 🔍 → 2–4 words → sort by <b>Top → Past year</b> ⚠️ (button spot not confirmed)</li>
-        <li>Open posts with lots of comments and read the top 3 👀</li>
-        <li>For app tips, only trust posts under 3 months old ⚠️ (Claude's rule, not Reddit's)</li>
-        <li>Loop: screenshot a post → send it to Claude → it turns it into steps and flags anything outdated 👀</li>
-        <li>First searches: "tips for non coders", "reusable template", "interview tips" 👀</li>
-        <li>Cost: free ✅ · <span class="tag">To do</span> Joined? Not confirmed ⚠️</li>
-      </ul>
-    </details>
-
-    <details>
-      <summary>Health insurance enrollment</summary>
-      <ul class="steps">
-        <li>Wisconsin uses <b>HealthCare.gov</b> ✅</li>
-        <li>2027 open enrollment: Nov 1, 2026 – Jan 15, 2027 ✅</li>
-        <li>Enroll by <b>Dec 15</b> → coverage starts Jan 1 ✅</li>
-        <li>Enroll Dec 16 – Jan 15 → coverage starts Feb 1 ✅</li>
-        <li>After Jan 15 you need a special enrollment reason ✅</li>
-        <li>Free local help: HealthCare.gov's ZIP code search for an agent or assister ✅</li>
-        <li>Sign up only on the official site, to avoid scams ✅</li>
-        <li>Re-check the dates before you act ⚠️ (verified Nov 22)</li>
-      </ul>
-    </details>
-
-    <details>
-      <summary>Glamoré+ ambassador</summary>
-      <ul class="steps">
-        <li>Term: Oct 1, 2026 – Apr 1, 2027 👀</li>
-        <li>Every month 👀
-          <ul class="steps">
-            <li>1–2 spray tans (meeting goal: 2), booked at <b>glamoreplus.com</b></li>
-            <li>2 posts, at least 1 a feed post or Reel, not only a Story</li>
-            <li>1 referral: write your name on the 10%-off card; they put your name in the booking notes</li>
-          </ul>
-        </li>
-        <li>During each visit: tag <b>@glamore.plus</b> in Stories or TikToks 👀</li>
-        <li>Within <b>72 hrs</b> of each tan: post it, and upload to Slack 3 photos (before, after, styled) + 1 video, 15–60 sec. Sunday doesn't count toward the 72 hrs 👀</li>
-        <li>No blurry, mirror, filtered, dim or screenshot files; send originals 👀</li>
-        <li>Rejected content: resend within 48 hrs 👀 · Keep originals 90 days 👀</li>
-        <li>FTC disclosure: "Glamoré+ Ambassador" or #GlamoréPlusAmbassador 👀</li>
-        <li>Slack: reply to DMs and @mentions within 48 hrs; keep notifications on 👀</li>
-        <li><span class="tag">To do</span> Intro video ASAP: name, pronouns, role, filmed tan, IG collab with Glamoré+. Drop the idea in Slack first so nobody repeats it 👀</li>
-        <li>Can't hit a month? Tell Hel before the month ends 👀</li>
-        <li><span class="tag">To do</span> Product photo shoot: Hel's Oct 12 DM + the availability form. Status unknown ⚠️</li>
-        <li>Thank-you party: no date as of Nov 23 ✅ (checked Slack)</li>
-        <li>Booking: pick a time with a free 72-hr window after it, around POP shifts 👀</li>
-        <li>Promo copy: your "glow" keyword, body-positive, no em dashes or italics ✅</li>
-        <li>Ambassador name ideas: Glow Getters, Radiance Reps ✅</li>
-      </ul>
-    </details>
-
-    <details>
-      <summary>Daily Agent Brief</summary>
-      <ul class="steps">
-        <li><b>BEST:</b> scheduled task. Runs in the cloud, even with your phone off 👀</li>
-        <li><b>2ND BEST:</b> a Skill, which only runs when you ask 👀</li>
-        <li>Paid plans only (Pro, Max, Team, Enterprise) 👀</li>
-        <li>Set up: tell Claude what to do and when; it builds the task in the chat 👀</li>
-        <li>Find it: <b>≡ → Scheduled</b> 👀</li>
-        <li>Runs daily 9:44 AM CT: a push plus one email to you 👀</li>
-        <li>Report-only: never replies or sends anything to anyone else 👀</li>
-        <li>Sections 👀
-          <ul class="steps">
-            <li>⏰ Due soon (at the top)</li>
-            <li>Unanswered emails</li>
-            <li>Asks and commitments</li>
-            <li>Calendar adds</li>
-            <li>Slack + the Glamoré+ tracker</li>
-            <li>3 POP TikTok ideas</li>
-            <li>Promo drafts (max 2 new Canva drafts, 1080×1920)</li>
-            <li>Milwaukee LGBTQ/arts digest</li>
-            <li>New Drive footage</li>
-          </ul>
-        </li>
-        <li>Tags in the brief: ✅ verified, 👀 one source, ⚠️ guess 👀</li>
-        <li>Test: say <b>"run test"</b>. A "[TEST]" email arrives in a few minutes; Canva is skipped 👀</li>
-        <li>To change it, update the existing task. A new one causes duplicates 👀</li>
-        <li>Old version: paused 👀</li>
-      </ul>
-    </details>
-
-    <details>
-      <summary>Connecting apps + text alerts</summary>
-      <ul class="steps">
-        <li>Gmail, Drive: tap <b>Connect</b> on the card in chat → approve 👀</li>
-        <li>Slack: <b>Connect → sign in → Allow</b> 👀</li>
-        <li>"Request to install" means a Slack admin must approve ✅</li>
-        <li>Claude reads Slack and only sends when you ask 👀</li>
-        <li>Which plans work with Slack: sources disagreed ⚠️</li>
-        <li>AT&amp;T shut off email-to-text ✅, so <b>BEST</b> = push notifications 👀</li>
-        <li><b>2ND BEST:</b> iMessage connector. Free, but only works while the Mac is awake with Claude Desktop open ✅</li>
-        <li>Path: <b>Claude Desktop → Settings → Connectors → Browse connectors → iMessage → Install</b> ✅</li>
-        <li>Status: skipped, since you're mostly on your phone 👀</li>
-      </ul>
-    </details>
-
-    <details>
-      <summary>Adding events + reminders</summary>
-      <ul class="steps">
-        <li>Screenshot a text, email or appointment message → send it in a chat → Claude adds it 👀</li>
-        <li>Tap <b>Allow</b> on the pop-up 👀</li>
-        <li>Use a regular chat; it times out in the Code tab ⚠️</li>
-        <li>Alerts: 2 hrs, 1 day, 1 week before 👀</li>
-        <li>Events go on your <b>Work</b> calendar unless you name another 👀</li>
-        <li>A reminder with no time defaults to noon the next day 👀</li>
-        <li>Claude checks for duplicates before adding 👀</li>
-      </ul>
-    </details>
-
-    <details>
-      <summary>Tracing where the brief got a fact</summary>
-      <ul class="steps">
-        <li>Ask <b>"where did you hear X?"</b> 👀</li>
-        <li>Claude checks its memory notes plus a Gmail search, then opens the actual email 👀</li>
-        <li>Example: "add weekday specials to POS" came from an Oct 16 email with an empty body and no deadline. The "due soon" was the brief's own guess 👀</li>
-        <li>Rule: brief wording can be inference, so check the source before acting 👀</li>
-      </ul>
-    </details>
-
-    <details>
-      <summary>Car: 2012 Impala LTZ</summary>
-      <ul class="steps">
-        <li>3.6L V6, 6-speed automatic, FWD, E85-capable, 17-gal tank ✅</li>
-        <li>Oil: 6 qt dexos1 5W-30 full synthetic ✅</li>
-        <li>Change oil within 600 mi of "Change Engine Oil Soon", and at least once a year 👀</li>
-        <li>Reset the oil light: ignition ON, engine off → press the gas pedal to the floor 3× in 5 sec 👀</li>
-        <li>Check the dipstick between changes 👀</li>
-        <li>Tires: P235/50R18, 30 psi (confirm on the driver-door sticker) 👀</li>
-        <li>Wipers: 22" driver / 21" passenger ✅ · Battery: Group 34 👀</li>
-        <li>Maintenance 👀
-          <ul class="steps">
-            <li>Transmission fluid (Dexron VI) + spark plugs at 97,500 mi</li>
-            <li>Coolant at 150,000 mi</li>
-            <li>Cabin filter about every 22,500 mi ⚠️</li>
-          </ul>
-        </li>
-        <li>Free recalls ✅
-          <ul class="steps">
-            <li>Ignition key: keep it alone on its ring; a heavy ring can knock it out of RUN</li>
-            <li>Power steering hose: some cars built mid-2011</li>
-          </ul>
-        </li>
-        <li><span class="tag">To do</span> Check your VIN with Chevy ⚠️</li>
-        <li>Watch for: the traction control light and an "Engine Power Reduced" message 👀</li>
-        <li>Leather: damp cloth and mild soap only ⚠️ · Floor mats: never stack them ✅</li>
-      </ul>
-    </details>
-
-    <details>
-      <summary>Selling items online</summary>
-      <ul class="steps">
-        <li>Photos: the full set, each item, then close-ups of every flaw. List every flaw in the description 👀</li>
-        <li><b>BEST:</b> Facebook Marketplace, no fees for local pickup ✅
-          <ol class="steps">
-            <li><b>Marketplace → Sell → Create listing → One item</b> ✅</li>
-            <li>Up to 10 photos → title, price, condition, category, description 👀</li>
-            <li><b>Next → List in more places</b> → pick groups → <b>Publish</b> 👀</li>
-            <li>Group missing? It's pending approval or not a buy/sell group. Once approved: <b>Share → Share to a Group</b> ⚠️</li>
-            <li>Leave <b>Promote listing</b> off; it's a paid ad ✅</li>
-          </ol>
-        </li>
-        <li>OfferUp ("OfferUp - Shop. Buy. Sell."): <b>Post → photos → details → Post</b>. Free for local pickup ✅</li>
-        <li>Craigslist: free for sale-by-owner posts ✅</li>
-        <li>Dive gear: try a local dive shop on consignment 👀</li>
-        <li>Safety: cash at pickup, never text anyone a code, and Zelle "upgrade" emails are fake 👀</li>
-        <li>Sold? Mark it sold everywhere. No bites in a week? Split the items up ⚠️</li>
-      </ul>
-    </details>
-
-    <details>
-      <summary>Basement purge / move-out</summary>
-      <ul class="steps">
-        <li>Trunk keeps: spare tire, ice scraper, headlamp, chair, tent 👀</li>
-        <li>Bring everything into one area → list it → Claude builds a box map 👀</li>
-        <li>Supplies: HDX 27-gal totes ⚠️ (check the Home Depot app), trash bags, painter's tape, a Sharpie</li>
-        <li>Tape off zones: <b>KEEP · SELL · DONATE · GIVE · TRASH</b> 👀</li>
-        <li>Sort in this order 👀
-          <ol class="steps">
-            <li>Clothes: keep what fits and what you wore this year</li>
-            <li>Gear and tech: test it and wipe data ✅. Camera gear gets organized, not packed</li>
-            <li>Decor and canvases: check the backs for water damage</li>
-            <li>Papers and keepsakes last: toss anything moldy ✅</li>
-          </ol>
-        </li>
-        <li>Kitchen: keep the best pot and 4 of each dish 👀</li>
-        <li>Pack: label totes, keep them off the floor, fill them full (light bins float in floods) ✅</li>
-        <li>Out the same day
-          <ul class="steps">
-            <li>Goodwill: clothes and shoes; no furniture, no pickup ✅</li>
-            <li>Best Buy e-waste: 3 items a day ✅</li>
-            <li>Sell: list it that night</li>
-            <li>Give: set a pickup deadline</li>
-          </ul>
-        </li>
-      </ul>
-    </details>
-
-    <details>
-      <summary>Washing the mattress topper</summary>
-      <ul class="steps">
-        <li>Homemade peroxide + dish soap is OK; the tag allows non-chlorine bleach ✅</li>
-        <li>Let it sit about 1 hr, max a few hrs ✅</li>
-        <li>Large-capacity washer, or a laundromat's big front-loader ✅</li>
-        <li>Cold, gentle cycle, mild detergent 👀, a little under the normal line ✅</li>
-        <li>Optional non-chlorine bleach ✅
-          <ul class="steps">
-            <li>Clorox 2: line 1 (HE washer) or line 2 (standard)</li>
-            <li>OxiClean: line 1, dissolved in 16 oz of water, added to the drum first</li>
-          </ul>
-        </li>
-        <li>Low heat with 2–3 dryer balls; can take 2–3 cycles 👀</li>
-        <li>Squeeze the edges and center. Still damp? Dry it again 👀</li>
-      </ul>
-    </details>
-
-    <p class="group">From other chats</p>
-
-    <details>
-      <summary>Sending high-quality video iPhone → Android</summary>
-      <ul class="steps">
-        <li>Problem: texting a video makes it blurry (compressed) ✅</li>
-        <li><b>BEST:</b> Google Drive. Keeps the original quality, and the link doesn't expire ✅</li>
-        <li><b>Drive app → + → File upload</b> → pick the video → <b>Share</b> → set <b>Anyone with the link</b> → copy link ✅</li>
-        <li>Tell them to <b>download, not stream</b>. The in-app player compresses to 1080p ⚠️</li>
-        <li><b>2ND BEST:</b> iCloud Link. <b>Photos → Share → Copy iCloud Link</b> ⚠️ Needs iCloud Photos on; the link expires in 30 days</li>
-        <li>Skip: Messenger (compresses even in "HD"), Gmail (25MB cap, then turns it into a Drive link)</li>
-        <li>Cost: free ✅</li>
-      </ul>
-    </details>
-
-    <details>
-      <summary>OptiSigns video playback (Samsung TVs)</summary>
-      <ul class="steps">
-        <li>Two TVs: Entry 55" CU7000 (rotated 90°), Patio 32" N5300 (rotated 270°) 👀</li>
-        <li>Problem 1: Canva MP4s won't play. Cause: no audio track, so Samsung Tizen rejects them ⚠️</li>
-        <li>Problem 2: videos play sideways or stretched. Cause: OptiSigns rotates images, not videos 👀</li>
-        <li><b>Canva fix</b> ✅
-          <ol class="steps">
-            <li>Build at <b>1920×1080</b> (not 1080×1920), art pre-rotated 90° clockwise, stretched to fill</li>
-            <li>Add a music track with volume near zero. Not muted, so the audio track stays</li>
-            <li>Export at <b>1080p</b>, never 4K (4K fails on the 32")</li>
-          </ol>
-        </li>
-        <li>OptiSigns side: playlist <b>Scale Video → Stretch</b>; keep <b>Scale Image → Fit</b> ✅</li>
-        <li>Don't touch the Orientation setting; it's right for images ⚠️</li>
-        <li>Keep the Ads playlist under 15 items / 150MB (Samsung limit) ⚠️</li>
-        <li>If an OptiStick runs a TV: <b>Video Player Setting → Surface View → Texture View</b> fixes all videos at once ⚠️ unconfirmed</li>
-        <li>Cost: free within your existing OptiSigns setup</li>
-      </ul>
-    </details>
-
-    <details>
-      <summary>Canva rulers + flattening a design</summary>
-      <ul class="steps">
-        <li>Rulers: in the Canva editor's <b>File</b> menu (between Home and Resize) → <b>Rulers and guides → Show rulers and guides</b>, or Shift+R 👀 (Canva's File menu, not Safari's)</li>
-        <li>Exporting a PDF and re-uploading it keeps editable layers ⚠️</li>
-        <li><b>BEST flatten:</b> <b>Share → Download → PNG</b>. Gives a flat, non-editable image ✅</li>
-        <li><b>2ND BEST:</b> Canva's own Flatten PDF option (less reliable)</li>
-        <li>You're on paid Canva</li>
-      </ul>
-    </details>
-
-    <details>
-      <summary>TikTok/Canva sound effects</summary>
-      <ul class="steps">
-        <li>TikTok sound effects can't be searched, only browsed by category ⚠️</li>
-        <li><b>BEST:</b> Canva (free, uploads any audio) ✅
-          <ol class="steps">
-            <li>Safari → <b>pixabay.com/sound-effects</b> (royalty-free) → pick one → <b>Download</b> (MP3 to Files) ⚠️ may ask you to log in</li>
-            <li>Canva → your video → <b>+ → Uploads → Upload files</b> → pick the MP3 → tap to add</li>
-            <li>Drag it to the spot → export → post to TikTok</li>
-          </ol>
-        </li>
-        <li>Cost: free</li>
-      </ul>
-    </details>
-
-    <details>
-      <summary>Memes + GIFs from your apps</summary>
-      <ul class="steps">
-        <li>Memes: Canva → meme template → add photo + text → export PNG ✅</li>
-        <li>GIF from a clip: <b>Shortcuts</b> app → built-in <b>"Video to GIF"</b> shortcut ✅</li>
-        <li>Canva can also animate a design → export as GIF ⚠️ free-tier limits</li>
-        <li>Cost: free</li>
-      </ul>
-    </details>
-
-    <details>
-      <summary>Best iPhone camera video settings</summary>
-      <ul class="steps">
-        <li>In the Camera app: tap the <b>HD</b> label → switches to <b>4K</b>; tap the <b>fps</b> number → 24/30/60 ✅</li>
-        <li>More options: <b>Settings → Camera → Record Video</b> ✅</li>
-        <li>Best combos 👀
-          <ul class="steps">
-            <li>4K + 24fps: cinematic</li>
-            <li>4K + 30fps: everyday and social</li>
-            <li>4K + 60fps: action and sports</li>
-          </ul>
-        </li>
-        <li>Record Video also sets: HDR on/off, Format (HEVC = smaller, H.264 = more compatible), stabilization, Auto Low Light FPS, Lock White Balance ✅</li>
-        <li>Cost: free (built in)</li>
-      </ul>
-    </details>
-
-    <details>
-      <summary>Claude model for creative work</summary>
-      <ul class="steps">
-        <li><b>BEST:</b> Opus 5.5 · High effort, for editing and song picks ✅</li>
-        <li>No separate "Canva model". The Canva connector is already on ✅</li>
-        <li>Spotify connector is on too. Ask for song picks directly ✅</li>
-        <li>Canva lists the connector under paid plans; some features may lock on free ⚠️</li>
-      </ul>
-    </details>
-
-    <details>
-      <summary>Suno song-writing</summary>
-      <ul class="steps">
-        <li>iOS: <b>Create → Custom on</b> → lyrics in the <b>Lyrics</b> field, genre/sound in <b>Styles</b> ✅</li>
-        <li>Use bracketed tags: [Verse], [Chorus], [Bridge], [Break], [Hook]. Not bold text ✅</li>
-        <li>Put a real BPM in Styles (e.g. "slow, 85 BPM"). It's followed more reliably than words alone 👀</li>
-        <li>Slow down fast vocals: add a BPM, shorter choppier lines, more line breaks, avoid "upbeat" ✅</li>
-        <li>Avoid artist names in Styles (Suno may block or substitute); explicit content risks filtering ⚠️</li>
-        <li>About 5,000 characters of lyrics max ⚠️ (third-party guideline, not official)</li>
-        <li>Keep the Styles and Exclude boxes fixed; only change Lyrics between revisions ✅</li>
-      </ul>
-    </details>
-
-    <details>
-      <summary>Finding a noise frequency in a video</summary>
-      <ul class="steps">
-        <li>Send Claude a .mov. It pulls the audio and runs a spectral analysis ✅</li>
-        <li>Example: ~14.1 kHz whine, tones 937.5 Hz apart = an electronic source 👀</li>
-        <li>Fix: unplug devices one at a time to find it (charger, LED, TV, power brick) ✅</li>
-        <li>Backup: the free <b>SpectrumView</b> app for live analysis ✅</li>
-        <li>Cost: free</li>
-      </ul>
-    </details>
-
-    <details>
-      <summary>Fast charger + USB-C picks</summary>
-      <ul class="steps">
-        <li><b>BEST charger:</b> Anker 735 (Nano II 65W, 3-port). Covers the Mac; the 17 Pro Max needs 40W for its fastest charge ✅</li>
-        <li>With Mac and phone both plugged in, power splits, so the phone charges slower ⚠️</li>
-        <li>Buy-guide scale: 3 = great, 0 = toss ✅</li>
-        <li>Your rule: USB-C only, no USB-A ⚠️</li>
-        <li>Toss any brick that buzzes and barely charges; it's failing ⚠️</li>
-        <li>Webcam: skip it. Use iPhone <b>Continuity Camera</b> (free) + a Belkin MagSafe mount ✅</li>
-        <li>Prices move. Recheck before buying ⚠️</li>
-      </ul>
-    </details>
-
-    <details>
-      <summary>Price comparison: clip light + accessories</summary>
-      <ul class="steps">
-        <li>Method: give Claude the product + your ZIP. It compares Walmart, Amazon and Best Buy and tags each 👀/⚠️ ✅</li>
-        <li>Clip-on light: a Neewer-type rechargeable clip light for phone + laptop ✅</li>
-        <li>Webcam: see Fast charger + USB-C picks (use Continuity Camera)</li>
-        <li>Online prices lag. Recheck before buying ⚠️</li>
-        <li>Your rule: USB-C only</li>
-      </ul>
+      <summary>Buying a 2TB external drive</summary>
+      <p class="meta">Apr 14, 2026 · Paid hardware</p>
+<ul class="steps">
+<li>Your use: iPhone 4K/60 + Nikon D5500 1080/60, long-term archive, works with iPhone and Mac 👀</li>
+<li>BEST: Crucial X9 2TB (~$216 then; a 2026 flash shortage pushed prices up) ⚠️</li>
+<li>No reputable 2TB SSD was available at $100–150 then ⚠️</li>
+<li>Must be USB-C (your rule) ✅</li>
+<li>2TB is plenty; your average shoot folder is about 2GB 👀</li>
+</ul>
     </details>
 
     <details>
       <summary>Slow Google Drive uploads</summary>
-      <ul class="steps">
-        <li>Your flow: phone → flash drive → laptop → Drive upload</li>
-        <li>Diagnose: run a speed test on the laptop ✅</li>
-        <li>Example: laptop 400 Kbps up vs phone 52 Mbps on AT&amp;T 5G → home Wi-Fi was the bottleneck, not the laptop, Chrome or flash drive 👀</li>
-        <li>Fix: restart the modem + router first; call Spectrum if it's still slow ✅</li>
-        <li>Chrome vs Safari didn't matter here</li>
-        <li>Cost: free</li>
-      </ul>
+      <p class="meta">Oct 29, 2026 · Free</p>
+<ul class="steps">
+<li>Your flow: phone → flash drive → laptop → Drive 👀</li>
+<li>Diagnose: run a speed test on the laptop ✅</li>
+<li>Example: laptop 400 Kbps up vs phone 52 Mbps on AT&amp;T 5G → home Wi-Fi was the bottleneck, not the laptop, Chrome or flash drive 👀</li>
+<li>Fix: restart the modem + router; call Spectrum if it's still slow ⚠️</li>
+<li>Chrome vs Safari didn't matter 👀</li>
+</ul>
     </details>
 
     <details>
-      <summary>Google Drive duplicate + file cleanup</summary>
-      <ul class="steps">
-        <li>Claude can search a Drive folder and trash duplicates. They stay in Trash and can be recovered ✅</li>
-        <li>Watch for partial uploads: a file cut off at an exact size (e.g. 3 MB) is incomplete. Re-upload it ⚠️</li>
-        <li>Keep the full-size copy; trash the smaller partial ✅</li>
-        <li>Cost: free</li>
-      </ul>
+      <summary>Google Drive duplicates + partial uploads</summary>
+      <p class="meta">Oct 28, 2026 · Free</p>
+<ul class="steps">
+<li>Claude can search a Drive folder and trash duplicates. They stay in Trash and can be recovered 👀</li>
+<li>A file cut off at an exact size (e.g. exactly 3 MB) is a partial upload. Re-upload it ⚠️</li>
+<li>Keep the full-size copy; trash the smaller partial 👀</li>
+</ul>
     </details>
 
     <details>
-      <summary>Toast POS: discounts</summary>
-      <ul class="steps">
-        <li>Path: <b>Finance panel → scroll to "Related" → Settings → Discounts &amp; promo codes</b> ✅</li>
-        <li>Don't use the similar Settings under "Accounting"; it's the wrong one ⚠️</li>
-        <li>Cost: free within Toast</li>
-      </ul>
+      <summary>Google Drive &quot;unsupported file&quot;</summary>
+      <p class="meta">Oct 24, 2026 · Free</p>
+<ul class="steps">
+<li>Cause: the file didn't finish uploading. It often stops at a round size like 68.00 MB ⚠️</li>
+<li>Drive can't preview ProRes .MOV, only H.264/MPEG4 👀</li>
+<li>Fix: check the original's size in Photos (tap ⓘ), compare, re-upload if the original is bigger 👀</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>Google Drive shared-folder alerts + mystery VEGAS files</summary>
+      <p class="meta">Apr 2026 · Free · <a href="https://claude.ai/chat/9d674235-66da-4ba0-b1b1-a46be8f2f3a1">https://claude.ai/chat/9d674235-66da-4ba0-b1b1-a46be8f2f3a1</a></p>
+<ul class="steps">
+<li>When sharing: Share → uncheck <b>Notify people</b> 👀</li>
+<li>Comments only ping people you @-tag 👀</li>
+<li>Drive gear → Settings → Notifications only changes what you receive 👀</li>
+<li>Whether adding files to a shared folder notifies people: Claude contradicted itself ⚠️</li>
+<li>Safe either way: work in a private folder, then move files into the shared one when ready 👀</li>
+<li>.vesf / .vesf.meta files = VEGAS Pro edit files (no footage) synced from the shared folder. Harmless: click Cancel, ignore or delete them 👀</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>Photo cleanup + delete sync</summary>
+      <p class="meta">Jun 17, 2026 · Free · <a href="https://claude.ai/chat/ac83a3c5-9989-4a42-9844-a83a5bd688cc">https://claude.ai/chat/ac83a3c5-9989-4a42-9844-a83a5bd688cc</a></p>
+<ul class="steps">
+<li>iCloud Photos on → deleting on any device deletes it everywhere. Off → each device is separate 👀</li>
+<li>Check: Mac Photos → Settings → iCloud tab; iPhone Settings → [your name] → iCloud → Photos 👀</li>
+<li>Deleted items sit in Recently Deleted for 30 days and still show on other devices until emptied 👀</li>
+<li>Empty on iPhone: Photos → Recently Deleted → Select → Delete All. Claude said it's under Library 👀; in iOS 26 it may be Collections → Utilities ⚠️</li>
+<li>Empty on Mac: Photos sidebar → Recently Deleted → Empty 👀</li>
+<li>Claude's calls on your 5 items 👀<ul class="steps">
+<li>Amazon t-shirt screenshot: delete now</li>
+<li>Glamoré shoot-plan screenshot: delete now</li>
+<li>Screenshots for Claude/ChatGPT: keep; they're part of your workflow</li>
+<li>Rehearsal + musical videos: move to Drive the same night, then delete from the phone</li>
+</ul>
+</li>
+<li>Pattern: you treat "delete" as "lose forever." What you need is a transfer system 👀</li>
+<li>Habit: screenshot → use → delete, same day 👀</li>
+<li>A post-shoot checklist was offered but never built 👀</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>Footage logging + organization system</summary>
+      <p class="meta">Aug 4, 2026 · Free · your core workflow</p>
+<ul class="steps">
+<li>Master library = the MacBook internal drive (APFS); Finder tags are native and searchable there ✅</li>
+<li>SanDisk (exFAT) = courier only, phone → laptop; tags survive the copy onto the Mac ✅</li>
+<li>Tags: cast names, Interview vs B-Roll, location, Promo, status (Final/Post) 👀</li>
+<li>Filenames = sortable IDs only: "YYYY-MM-DD_Project_#####" (shoot date, Finder "Name and Counter", zero-padded, shot order) 👀</li>
+<li>Keep cast and location out of filenames; tags handle that 👀</li>
+<li>Transcripts go in Finder Comments via free Mac dictation (talking clips only) 👀</li>
+<li>Files on iPhone has no eject. Wait for the copy, then unplug ⚠️</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>Send full-quality video iPhone → Android</summary>
+      <p class="meta">Oct 15, 2026 · Free</p>
+<ul class="steps">
+<li>Texting a video makes it blurry (compressed) 👀</li>
+<li>BEST: Google Drive. Original quality, and the link doesn't expire ✅</li>
+<li>Google Drive app → + → File upload → pick the video → Share → <b>Anyone with the link</b> → copy link 👀</li>
+<li>Tell them to download, not stream; Drive's player compresses to 1080p ⚠️</li>
+<li>2ND BEST: Photos → Share → Copy iCloud Link ⚠️ needs iCloud Photos on; expires in 30 days</li>
+<li>Skip: Messenger (compresses even in "HD"), Gmail (25MB cap, then a Drive link) ✅</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>iCloud &quot;temporary access&quot; on Mac</summary>
+      <p class="meta">Jun 17, 2026 · Free · <a href="https://claude.ai/chat/10e5a963-3328-47c4-aa3b-f57c90cab105">https://claude.ai/chat/10e5a963-3328-47c4-aa3b-f57c90cab105</a></p>
+<ul class="steps">
+<li>Cause: Advanced Data Protection is on, which turns off web access by default. Turning it back on gives temporary access you approve from a trusted device ✅</li>
+<li>Each approval lasts about 1 hour 👀</li>
+<li>BEST: keep ADP on if iCloud is just your sync layer (stronger encryption) 👀</li>
+<li>Option A, keep ADP with less friction: System Settings → [your name] → iCloud → <b>Data Access on iCloud.com</b> → allow ✅</li>
+<li>Option B: System Settings → [your name] → iCloud → Advanced Data Protection → off. Permanent access, weaker encryption 👀</li>
+</ul>
+    </details>
+    <p class="group" id="h-video">🎬 Video, camera + editing</p>
+
+    <details>
+      <summary>Best iPhone camera video settings</summary>
+      <p class="meta">Confirmed Nov 2026 · Free</p>
+<ul class="steps">
+<li>Camera app: tap <b>HD</b> to switch to 4K; tap the fps number for 24/30/60 👀</li>
+<li>Settings → Camera → Record Video: HDR Video, Format (HEVC = smaller, H.264 = compatible), stabilization, Auto Low Light FPS, Lock White Balance ✅</li>
+<li>Combos: 4K 24fps cinematic · 4K 30fps everyday/social · 4K 60fps action 👀</li>
+<li>Your default: 9:16 vertical, under 30 sec, 4K 30fps 👀</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>Quality CAMtrol guide</summary>
+      <p class="meta">Apr 11, 2026 · Free · <a href="https://claude.ai/chat/6dc37021-39c5-42ea-9fbc-35ca56c5c3ce">https://claude.ai/chat/6dc37021-39c5-42ea-9fbc-35ca56c5c3ce</a></p>
+<ul class="steps">
+<li>Capture (Settings → Camera) 👀<ul class="steps">
+<li>4K 30fps (not 1080p 60)</li>
+<li>H.264 / Most Compatible</li>
+<li>HDR Video off</li>
+<li>Stabilization Standard, not Action Mode</li>
+<li>Lock exposure: tap and hold the screen; slide the sun icon</li>
+<li>Lock white balance: the native toggle ⚠️ or Blackmagic Camera ✅</li>
+<li>Gimbal for walking shots and stage pans; handheld for quick interviews and BTS</li>
+</ul>
+</li>
+<li>Audio: iPhone mic within 3–4 ft, deadcat outdoors, back of the phone toward the noise; Bower lav for anyone speaking 👀</li>
+<li>Transfer: AirDrop to the Mac → move it out of Downloads → edit local files only 👀</li>
+<li>Claude claimed iCloud and Drive re-compress originals ⚠️ (likely wrong; they keep originals)</li>
+<li>Export: 1080×1920, 30fps, H.264, highest bitrate, SDR. Shoot vertical, edit vertical 👀</li>
+<li>Editing inside TikTok compresses twice 👀 ⚠️ (conflicts with your #2 editing choice)</li>
+<li>Post from Camera Roll on strong Wi-Fi with TikTok's Upload button; Reels may get a higher bitrate ⚠️. Never repost a downloaded copy 👀</li>
+<li>Pre-shoot checklist 👀<ul class="steps">
+<li>4K30, HDR off</li>
+<li>Enough storage (about 400 MB/min ⚠️)</li>
+<li>Gimbal charged, lav ready, clean lens</li>
+<li>AirDrop first, edit, export, post on Wi-Fi</li>
+</ul>
+</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>Bower lav mic + Snap Light</summary>
+      <p class="meta">Apr 14, 2026 · <a href="https://claude.ai/chat/9d674235-66da-4ba0-b1b1-a46be8f2f3a1">https://claude.ai/chat/9d674235-66da-4ba0-b1b1-a46be8f2f3a1</a></p>
+<ul class="steps">
+<li>Lav mic 👀<ol class="steps">
+<li>Plug the USB-C receiver into the phone (red light = on). No Bluetooth</li>
+<li>Hold the transmitter button 3 sec; solid green = paired</li>
+<li>Press twice for noise reduction: 1 green flash = normal, 3 = noise reduction on</li>
+<li>Clip it outside the collar, 6–8" from the mouth</li>
+<li>Check for solid green before every take; it auto-offs after 3 min without a connection</li>
+</ol>
+</li>
+<li>Quiet room → normal · noisy → noise reduction · 2 people → mic on the main talker · groups → shotgun mic 👀</li>
+<li>Won't pair: unplug/replug the receiver → mic off → on → wait for solid green. Muffled: move it outside clothing. Charging: red, off when full 👀</li>
+<li>Snap Light 👀<ol class="steps">
+<li>Hold Power/Mode about 3 sec for on/off</li>
+<li>Short press cycles warm / natural / white (3000–6500K)</li>
+<li>Up/Down = 8 brightness levels</li>
+<li>Clip to the top edge (the sides block the camera bump or side button)</li>
+<li>Stop the flop: turn the knurled knob clockwise (a rubber band adds grip)</li>
+</ol>
+</li>
+<li>Dressing room: Warm 2–4 · outdoors: White 5–7 · mixed: Natural 3–5 · subject 2–4 ft away: 4 max · live stage: light off 👀</li>
+<li>The panel doesn't flip 180°. For interviews, mount it on a tripod (1/4" thread). Clips onto things up to 1.1" thick; phones up to 3.1" 👀</li>
+<li>About 3 hrs at max. Blue moving = charging, solid = full 👀</li>
+<li>Warranty 1 year: <a href="https://www.bowerusa.com">https://www.bowerusa.com</a> ⚠️ (not opened)</li>
+<li>A 6-page printable manual (HTML) is in that chat: open it → Print 👀</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>Nikon D5500: battery, cable + portrait settings</summary>
+      <p class="meta">Apr 14 + Jul 15, 2026 · <a href="https://claude.ai/chat/9d674235-66da-4ba0-b1b1-a46be8f2f3a1">https://claude.ai/chat/9d674235-66da-4ba0-b1b1-a46be8f2f3a1</a></p>
+<ul class="steps">
+<li>Your Bonacell EN-EL14 was bloated: stop using it, don't charge it, keep it from heat, bag it and recycle it 👀</li>
+<li>Eject a battery: hold the orange latch to the side 👀</li>
+<li>Replacement: genuine Nikon EN-EL14a (search "Nikon 27126 EN-EL14a") or "BESTON 2-Pack EN-EL14a with charger" 👀</li>
+<li>Same day: Art's Cameras Plus or Best Buy Greenfield; call ahead and check hours ⚠️</li>
+<li>USB is data only, no USB power. Running without a battery needs the EH-5b AC adapter + EP-5A connector 👀</li>
+<li>Port: Nikon USB Mini-B 8-pin (UC-E6 type), not 5-pin mini-USB ✅. Get a USB-C version for the MacBook ⚠️</li>
+<li>HDMI out: mini (Type C) ✅</li>
+<li>Manual: <a href="https://downloadcenter.nikonimglib.com/en/products/196/D5500.html">https://downloadcenter.nikonimglib.com/en/products/196/D5500.html</a> 👀</li>
+<li>Portrait + hair ✅<ul class="steps">
+<li>Mode A (aperture priority), f/2.8–f/4</li>
+<li>Shutter fast enough to freeze hair</li>
+<li>AF-S, single point on the eyes</li>
+<li>35mm or 50mm lens (acts like ~50/85mm full-frame); shoot RAW; backlight/rim light for hair glow</li>
+</ul>
+</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>Doc transcripts with MacWhisper</summary>
+      <p class="meta">Jul 26, 2026 · Free tier · <a href="https://claude.ai/chat/ac04c03c-ff5c-4073-a2ac-6c1dafdb68f4">https://claude.ai/chat/ac04c03c-ff5c-4073-a2ac-6c1dafdb68f4</a></p>
+<ul class="steps">
+<li>Goal: searchable text per clip to organize footage, not captions 👀</li>
+</ul>
+<ol class="steps">
+<li>Check Photos on the Mac first; clips may already be there via iCloud. If not: AirDrop, or plug in + Image Capture 👀</li>
+<li>Get the app 👀<ul class="steps">
+<li>BEST: Whisper Transcription from the Mac App Store (same developer, Apple-reviewed). Free with the Tiny + Base models ✅</li>
+<li>2ND BEST: MacWhisper from Gumroad. Type <a href="https://goodsnooze.gumroad.com/l/macwhisper">https://goodsnooze.gumroad.com/l/macwhisper</a>; don't search, because of look-alike ads ✅</li>
+</ul>
+</li>
+<li>Gumroad only: free download → open the .dmg → drag it into Applications 👀</li>
+<li>First launch: download the <b>Base</b> model (fast, good for keyword search) 👀</li>
+<li>Plug in the MacBook; transcribing maxes the CPU 👀</li>
+<li>Drag in one .MOV → export as TXT 👀</li>
+<li>Name it like the clip (IMG_4471.MOV → IMG_4471.txt); keep all the .txt files in one folder next to the footage 👀</li>
+<li>Search any phrase in Finder/Spotlight; the filename that comes back is the clip 👀</li>
+</ol>
+<ul class="steps">
+<li>Free: unlimited transcripts, TXT/SRT/VTT, one file at a time. Pro adds batch, Large-v3/Turbo, speaker labels, watch folders 👀</li>
+<li>Under ~15 clips, free is fine; over 30, Pro is worth it 👀</li>
+<li>Phone only: Aiko (free, on-device, iOS 26+, ~1.8 GB) for one-off quotes 👀</li>
+<li>Skip Descript: every plan caps transcription hours 👀</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>Stage Footage Map skill</summary>
+      <p class="meta">Apr 10–13, 2026 · <a href="https://claude.ai/chat/3dd7e60d-77b9-4ba2-b37b-f605262e5f95">https://claude.ai/chat/3dd7e60d-77b9-4ba2-b37b-f605262e5f95</a></p>
+<ul class="steps">
+<li>The skill is on your account ✅</li>
+<li>Why: you shoot one show from 5+ spots and forget what's in each clip by edit time 👀</li>
+<li>Use: give it the clip folder (+ event, performers, show start time) → PDF → print it or keep it on a second screen → write names as you scrub 👀</li>
+<li>Layout: 3–6 columns; thumbnails from the 3-second mark 👀</li>
+<li><span class="tag">To do</span> Its instructions still name the iPhone 15 Pro Max and LumaFusion ⚠️ (both outdated)</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>CapCut: aspect ratio, plan + sync</summary>
+      <p class="meta">Oct 4 + Oct 7, 2026</p>
+<ul class="steps">
+<li>New vertical project: deselect clips → <b>Aspect ratio</b> / Ratio / Canvas in the bottom toolbar → 9:16 👀</li>
+<li>Skip pinch-to-reframe to keep a horizontal clip with bars instead of cropping ✅</li>
+<li>Your plan was Standard; the "Pro" wording was leftover template text ⚠️</li>
+<li>Credits only get spent on AI tools 👀</li>
+<li>Sync phone ↔ Mac: upload projects to a cloud "Space" (not automatic) 👀</li>
+<li>Space settings: the small cloud-with-gear icon at the top right (right of profile + "+") 👀</li>
+<li>Bulk upload: Local projects → <b>Select</b> → upload all 👀</li>
+<li>Clear cache safely: Settings → Clear Cache (drafts are stored separately) ✅</li>
+<li>CapCut Pro is a paid tier ⚠️ (cost not checked)</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>LumaFusion (you don&#x27;t use it now)</summary>
+      <p class="meta">Apr 14, 2026 · <a href="https://claude.ai/chat/9206459d-bc14-4fbb-8112-6f0c23716eeb">https://claude.ai/chat/9206459d-bc14-4fbb-8112-6f0c23716eeb</a> · <a href="https://claude.ai/chat/dd42b908-850f-4b03-9793-c5497298e76b">https://claude.ai/chat/dd42b908-850f-4b03-9793-c5497298e76b</a> · <a href="https://claude.ai/chat/949b3770-8925-41ec-a6a1-0c19e17a1314">https://claude.ai/chat/949b3770-8925-41ec-a6a1-0c19e17a1314</a></p>
+<ul class="steps">
+<li>Guide: <a href="https://lumatouch.clickhelp.co/articles/lumafusion-reference-guide-publication">https://lumatouch.clickhelp.co/articles/lumafusion-reference-guide-publication</a> 👀</li>
+<li>PDF: <a href="https://luma-touch.com/lumafusion-reference-guide">https://luma-touch.com/lumafusion-reference-guide</a> · Videos: <a href="https://www.youtube.com/@LumaTouch">https://www.youtube.com/@LumaTouch</a> 👀</li>
+<li>In the app: Settings (gear) → Help → Reference Guide 👀</li>
+<li>New project: File → New Project… in the menu bar 👀</li>
+<li>Switching projects was never solved ⚠️</li>
+<li>"Waiting to Upload" = the file is on your Mac and usable; keep it awake on Wi-Fi until the cloud icon disappears 👀</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>Canva rulers + flattening a design</summary>
+      <p class="meta">Nov 8, 2026 · Paid Canva</p>
+<ul class="steps">
+<li>Rulers: the Canva editor's own File menu (between Home and Resize) → <b>Rulers and guides → Show rulers and guides</b>, or Shift+R ✅</li>
+<li>Exporting a PDF and re-uploading it keeps editable layers ⚠️</li>
+<li>BEST flatten: <b>Share → Download → PNG</b> ✅</li>
+<li>2ND BEST: Canva's Flatten PDF option (less reliable) ⚠️</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>TikTok + Canva sound effects</summary>
+      <p class="meta">Nov 23, 2026 · Free</p>
+<ul class="steps">
+<li>TikTok sound effects can't be searched, only browsed by category ⚠️</li>
+<li>BEST: Canva (free; upload any audio) ✅<ol class="steps">
+<li>Safari → <a href="https://pixabay.com/sound-effects">https://pixabay.com/sound-effects</a> (royalty-free) → Download (MP3 to Files) ⚠️ may ask you to log in</li>
+<li>Canva → your video → + → Uploads → Upload files → pick the MP3 → tap to add</li>
+<li>Drag it to the spot → export → post to TikTok</li>
+</ol>
+</li>
+<li>You often layer multiple sounds across slides on TikTok 👀</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>Memes, GIFs + Facebook GIF comments</summary>
+      <p class="meta">Sep 8 + Oct 4, 2026 · Free</p>
+<ul class="steps">
+<li>Memes: Canva → meme template → photo + text → export PNG 👀</li>
+<li>GIF from a clip: Shortcuts app → built-in <b>Video to GIF</b> shortcut 👀</li>
+<li>Canva can animate a design → export as GIF ⚠️ free-tier limits</li>
+<li>Facebook comments: uploaded GIFs often post as stills ⚠️. Upload to <a href="https://giphy.com">https://giphy.com</a> (free) → paste that link in the comment ⚠️ (third-party guidance)</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>Facetune glare on glasses</summary>
+      <p class="meta">Jul 23, 2026 · Paid app</p>
+<ul class="steps">
+<li>BEST: Patch tool. Set the source circle on a clean area of the same lens, not the background ✅</li>
+<li>2ND BEST: Clone tool. Quick pass: Anti Glare 👀</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>Burned-in captions</summary>
+      <p class="meta">Jun 18, 2026 · Free</p>
+<ul class="steps">
+<li>The caption toggle won't work when captions are burned into the video file ⚠️</li>
+<li>Only fix: find a version without embedded captions 👀</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>Suno song-writing</summary>
+      <p class="meta">Nov 6–11, 2026 · Paid tiers vary</p>
+<ul class="steps">
+<li>iOS: Create → <b>Custom</b> on → lyrics in Lyrics, genre/sound in Styles 👀</li>
+<li>Bracketed tags, not bold text: [Verse], [Chorus], [Bridge], [Break], [Hook] 👀</li>
+<li>Put a real BPM in Styles ("slow, 85 BPM"); it's followed more reliably than words 👀</li>
+<li>Slow down fast vocals: add a BPM, shorter choppier lines, more line breaks, avoid "upbeat" 👀</li>
+<li>Avoid artist names in Styles; explicit content risks filtering ⚠️</li>
+<li>About 5,000 characters of lyrics max ⚠️ (third-party guideline)</li>
+<li>Keep Styles and Exclude fixed; only change Lyrics between revisions 👀</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>Finding a noise frequency in a video</summary>
+      <p class="meta">Nov 11, 2026 · Free</p>
+<ul class="steps">
+<li>Send Claude a .mov; it pulls the audio and runs a spectral analysis 👀</li>
+<li>Example: ~14.1 kHz whine, tones 937.5 Hz apart = an electronic source 👀</li>
+<li>Fix: unplug devices one at a time (charger, LED, TV, power brick) 👀</li>
+<li>App: the free SpectrumView for live analysis ⚠️</li>
+</ul>
+    </details>
+    <p class="group" id="h-social">📣 Social, promo + film</p>
+
+    <details>
+      <summary>Your social media profile + editing apps</summary>
+      <p class="meta">Nov 24, 2026 · <a href="https://claude.ai/chat/ddf7eadc-97cb-4883-a54e-8d1677cbc806">https://claude.ai/chat/ddf7eadc-97cb-4883-a54e-8d1677cbc806</a></p>
+<ul class="steps">
+<li>Platforms: Instagram + TikTok main; Facebook too 👀</li>
+<li>Accounts: POP's TikTok (Walker's Point) · personal IG @MikeSadowski · credit line "Mike Sadowski (Photos/Video)" 👀</li>
+<li>Vibe: documentary/archival, Milwaukee's LGBTQ and drag scene 👀</li>
+<li>Format: 9:16, under 30 sec, 4K 30fps 👀</li>
+<li>Biggest gripes: blurry footage and upload compression 👀</li>
+<li>Editing ranking: 1) CapCut Pro 2) editing in Reels/TikTok while uploading 3) Canva for fliers, logos, extras. Never LumaFusion 👀</li>
+<li>Text-card rules 👀<ol class="steps">
+<li>Tease, don't announce</li>
+<li>Hook → build → payoff → CTA</li>
+<li>Sound like a person, not a press release</li>
+<li>Name the subject on the first and last card</li>
+<li>The last card works alone, because people screenshot it</li>
+<li>About 3 words per second of read time</li>
+<li>1 emoji max, at the end, none on the CTA</li>
+<li>No spoilers and no made-up dates or prices; use [PLACEHOLDERS]</li>
+<li>Your vibe words set the feel; they aren't the text</li>
+<li>Output: numbered list, clip → text, no intro</li>
+<li>Missing info → "Wait, pause"</li>
+</ol>
+</li>
+<li>Gap: POP's own vibe isn't saved anywhere 👀</li>
+</ul>
     </details>
 
     <details>
       <summary>Instagram: best time to post (Thursday)</summary>
-      <ul class="steps">
-        <li><b>BEST:</b> 6 PM (6–8 PM window), per Metricool 👀</li>
-        <li><b>2ND BEST:</b> 4 PM 👀</li>
-        <li>Your own data: <b>Instagram Profile → Professional dashboard → Total followers → Most active times</b> ✅ (needs a pro account + 100 followers)</li>
-        <li>Cost: free</li>
-      </ul>
+      <p class="meta">Oct 29, 2026 · Free</p>
+<ul class="steps">
+<li>BEST: 6 PM (6–8 PM window), per Metricool 👀 · 2ND BEST: 4 PM 👀</li>
+<li>Your own data: Instagram profile → <b>Professional dashboard → Total followers → Most active times</b> (pro account, 100+ followers) ✅</li>
+</ul>
     </details>
 
     <details>
-      <summary>Screen mirror MacBook → Samsung TV</summary>
-      <ul class="steps">
-        <li>Check both are on the same Wi-Fi ✅
-          <ul class="steps">
-            <li>Mac: <b>System Settings → Network → Wi-Fi → Details → TCP/IP</b></li>
-            <li>TV: <b>Menu → Network → Network Status</b></li>
-          </ul>
-        </li>
-        <li>Tried: free App Store app "Mirror Screen to Smart TV" (dev JingZhi He). It didn't detect the TV (DLNA errors) ⚠️</li>
-        <li><b>BEST:</b> a USB-C to HDMI adapter (~$15–20) ✅</li>
-        <li>Wireless mirroring was unreliable on your setup</li>
-      </ul>
+      <summary>TikTok display-name glitch</summary>
+      <p class="meta">Jun 18, 2026 · Free</p>
+<ul class="steps">
+<li>POPtokMKE showing a repeated name = a stale local cache; only you see it 👀</li>
+<li>Fix: iPhone Storage → TikTok → <b>Offload App</b> → reinstall ⚠️</li>
+</ul>
     </details>
 
     <details>
-      <summary>Watch Brewers + sports free on Mac</summary>
-      <ul class="steps">
-        <li>Brewers (FOX): FOX One 3-day free trial at fox.com or foxsports.com/live in Safari ⚠️ cancel within 3 days; not all plans include a trial</li>
-        <li>Local FOX6 can't stream the game; it needs FOX One ⚠️</li>
-        <li>Thursday Night Football: <b>twitch.tv/primevideo</b>. Free, no signup or card ✅</li>
-      </ul>
+      <summary>Rehearsal + ticket promo ideas</summary>
+      <p class="meta">Apr 21, 2026 · <a href="https://claude.ai/chat/d2fad2f4-1933-4eea-9448-fc90b27a50ca">https://claude.ai/chat/d2fad2f4-1933-4eea-9448-fc90b27a50ca</a></p>
+<ul class="steps">
+<li>Rehearsal: BTS walkaround · first-look reactions · note → fix → improvement · rough vs polished · warmups and huddles 👀</li>
+<li>Tickets: cast "I'm [name], come see me [date]" fast-cut · "X days left" countdown · no-context teaser ending on the ticket link · cast holding the flyer · quote card over a rehearsal still 👀</li>
+<li>Fastest: cast callouts (one take each) + candid B-roll 👀</li>
+<li>With your gear 👀<ul class="steps">
+<li>Lav: 15-sec "what's your character's deal?" interviews</li>
+<li>Snap Light: warm dressing-room content</li>
+<li>Gimbal: empty-set walkthrough with "Doors open [date]"</li>
+<li>iPhone: 120fps slow-mo reveal</li>
+</ul>
+</li>
+</ul>
     </details>
 
     <details>
-      <summary>iPhone billing + App Store charges</summary>
-      <ul class="steps">
-        <li>Update the card: <b>Settings → [your name] → Payment &amp; Shipping</b> → edit card ✅</li>
-        <li>Free apps stay free, but Apple wants a payment method on file ✅</li>
-        <li>Charged more than expected? An unpaid balance from a failed charge got combined in ⚠️</li>
-        <li>Check: <b>Settings → [your name] → Media &amp; Purchases → Purchase History</b> → look for "Amount You Owe" ✅</li>
-      </ul>
+      <summary>Muumuus &amp; Mimosas (POP) promo copy</summary>
+      <p class="meta">Oct 15, 2026 · Free</p>
+<ul class="steps">
+<li>Event: a day-drinking "tea dance" twist, Sunday 11 AM–4 PM, endless mimosas, host Lyz Dexic, patio access 👀</li>
+<li>Your format: flowing prose (no bullets), spell out "tea dance" (not "T-dance"), fold the venue in naturally 👀</li>
+</ul>
     </details>
 
     <details>
-      <summary>Google Drive "unsupported file" on upload</summary>
-      <ul class="steps">
-        <li>Cause: the file didn't finish uploading. It often stops at a round size like 68.00 MB ⚠️</li>
-        <li>Also: Drive can't preview ProRes .MOV, only H.264/MPEG4 👀</li>
-        <li>Fix: check the original's size in Photos (tap ⓘ), compare, and re-upload if the original is bigger ✅</li>
-        <li>Cost: free</li>
-      </ul>
+      <summary>MFF 2027 + Dairy Queenz doc</summary>
+      <p class="meta">Jul 24, 2026 · <a href="https://claude.ai/chat/eed55d50-edd1-4089-89be-1a84d7e1f6f8">https://claude.ai/chat/eed55d50-edd1-4089-89be-1a84d7e1f6f8</a></p>
+<ul class="steps">
+<li>Submit on FilmFreeway only: <a href="https://filmfreeway.com/festivals/23644">https://filmfreeway.com/festivals/23644</a> ✅</li>
+<li>Free for Wisconsin filmmakers: fill out <a href="https://forms.gle/7AtnAteKXVABbVs56">https://forms.gle/7AtnAteKXVABbVs56</a> before you submit ✅</li>
+<li>Category: Cream City Short, 15–20 min ✅</li>
+<li>Dates ✅<ul class="steps">
+<li>Submissions opened Aug 1, 2026; the earlybird deadline (Nov 2) passed</li>
+<li>Jan 1, 2027: public-screening embargo starts (7 counties)</li>
+<li>Jan 4, 2027: regular deadline (your target)</li>
+<li>Feb 1, 2027: final close</li>
+<li>Mar 26, 2027: notification</li>
+<li>Apr 29 – May 13, 2027: festival</li>
+</ul>
+</li>
+<li>Rules: one film per filmmaker · no works in progress · no ads, industrial or instructional work · captions required if accepted · you must control all content, including music 👀</li>
+<li>Plan 👀<ol class="steps">
+<li>The film is about Wisconsin drag artists: the book is the vehicle, Ruthie is the thread, the OTF interviews are the movie</li>
+<li>Pitch it toward Cream City Cinema / GenreQueer (programmer: Jack Feria) ⚠️</li>
+<li>Two cuts, in writing before shoot #1. A = promos, BTS, socials (Meg signs off). B = your festival short (you sign off; Meg gets a courtesy screening, not a veto)</li>
+<li>One-page email agreement: you own the footage · they get free promo use · you can cut and submit your own short · a talent release from every OTF · no copyrighted music in your cut</li>
+<li>Credit: "Directed by Michael Sadowski." Every director must live in the 7 counties to win an award, so give collaborators producer or DP credit</li>
+<li>Music is the #1 risk: lip-syncs need composition + master clearance. Build on interviews, BTS and getting-ready footage, or commission a score</li>
+<li>Ask Ruthie the book release date and whether the launch screening is public (public + in the 7 counties + after Jan 1 breaks the embargo)</li>
+<li>Get the photoshoot calendar in writing</li>
+<li>Ask MFF whether IG/TikTok posts count as a public screening</li>
+<li>Timeline: Nov = rough cut + lock music · Dec = picture lock, color, mix · Jan 4 = submit</li>
+</ol>
+</li>
+<li>Shoot specs 👀: horizontal, every clip · 4K 24fps, HDR off · lock exposure, white balance and the camera · Bower lav on every OTF within 2–3 ft · 30 sec of room tone per location · 5-sec handles · wide, medium and close coverage · log dialogue and timecode · shoot vertical promo B-roll separately for cut A</li>
+<li>iPhone footage is fine. Confirmed settings: 4K/24, HDR off, Lock White Balance on, Lock Camera on, High Efficiency, Stereo audio, Grid on ✅</li>
+<li>Locked white balance: Blackmagic Camera (free) has "Lock White Balance on Record" ✅</li>
+<li><span class="tag">To do</span> Unanswered: Did you tell Ruthie yes? How many shoots and artists? Do you know Meg? Can someone help with audio? What drops when October collides? 👀</li>
+</ul>
     </details>
 
     <details>
-      <summary>Mac cursor size, mirror lag, Zoom error 1132</summary>
-      <ul class="steps">
-        <li>Cursor size: <b>System Settings → Accessibility → Display → Pointer size</b> (slider; colors there too) ✅</li>
-        <li>Mirror cursor lag = Wi-Fi congestion: restart the router, use 5 GHz, close heavy apps. Known M1 mirroring bug → restart the mirror session ✅</li>
-        <li>Zoom error 1132 = account/device-level ban; a hotspot or new IP won't fix it ⚠️. Call Zoom support by phone (better than a ticket on free accounts) and explain it was accidental</li>
-        <li>Cost: free</li>
-      </ul>
+      <summary>Milwaukee Public Library makerspaces</summary>
+      <p class="meta">Apr 13, 2026 · Free · <a href="https://claude.ai/chat/814b74fb-5f6b-46de-9862-245da2776869">https://claude.ai/chat/814b74fb-5f6b-46de-9862-245da2776869</a></p>
+<ul class="steps">
+<li>14 locations: Atkinson, Bay View, Capitol, Center Street, Central, Central Drive-Up, East, Good Hope, Martin Luther King, Mitchell Street, Tippecanoe, Villard Square, Washington Park, Zablocki 👀</li>
+<li>BEST: Mitchell Street, the only one with a recording studio + studio lighting kit, plus a green screen, DSLR (Canon Rebel T7i), 8-channel USB mixer, mics and a kitchen 👀</li>
+<li>2ND BEST: Good Hope (laser cutter, 3D printer, DSLR, green screen, Cricut, 12×17" scanner) 👀</li>
+<li>Free walk-in Open Maker Time, 5:30–7:30 PM: Mondays at Mitchell Street + Good Hope; Tuesdays at MLK + Washington Park. 4–5:30 is teen time; other times by appointment 👀. Recheck; this is from April ⚠️</li>
+</ul>
     </details>
+
+    <details>
+      <summary>Glamoré+ ambassador</summary>
+      <p class="meta">Oct 28 – Nov 23, 2026 · <a href="https://claude.ai/chat/78fba1d0-669a-464e-b923-47a7fa855306">https://claude.ai/chat/78fba1d0-669a-464e-b923-47a7fa855306</a> · <a href="https://claude.ai/chat/5deff150-6cd9-4007-94a1-08fcaf32cdb2">https://claude.ai/chat/5deff150-6cd9-4007-94a1-08fcaf32cdb2</a> · <a href="https://claude.ai/chat/7f816c48-24f9-4e3c-8157-650722a360cc">https://claude.ai/chat/7f816c48-24f9-4e3c-8157-650722a360cc</a></p>
+<ul class="steps">
+<li>Signed Sep 30; runs Oct 1, 2026 – Apr 1, 2027 ✅ (from the contract PDF)</li>
+<li>Owner: Hel Hardinger (Lyz Dexic). Unpaid, discounted services 👀</li>
+<li>Every month 👀<ul class="steps">
+<li>1–2 spray tans (Hel's notes say 2), booked at <a href="https://glamoreplus.com">https://glamoreplus.com</a> ⚠️ (link not opened)</li>
+<li>2 posts, at least 1 a feed post or Reel, not only a Story</li>
+<li>1 new-client referral</li>
+</ul>
+</li>
+<li>At each visit: tag @glamore.plus in Stories or TikToks 👀</li>
+<li>Within 72 hrs of each tan (Sundays don't count): post it, and upload to Slack 3 photos (before, after, styled) + 1 video, 15–60 sec 👀</li>
+<li>No blurry, mirror, filtered, dim or screenshot files; send originals. Rejected → resend within 48 hrs. Keep originals 90 days 👀</li>
+<li>FTC disclosure: "Glamoré+ Ambassador" or #GlamoréPlusAmbassador 👀</li>
+<li>Slack: reply to DMs and @mentions within 48 hrs; keep notifications on. Slack is the best way to reach Hel, who's off Sundays 👀</li>
+<li>Glamoré+ can repost and reuse anything you submit 👀</li>
+<li>Intro Reel/TikTok ASAP: name, pronouns, role; film it during or after a tan; collab with the Glamoré+ IG; post the idea in Slack first 👀</li>
+<li>Referrals: your name on the card; the client puts your name in the booking notes and brings the card; once per client 👀</li>
+<li>Missed deadlines bring warnings; the 3rd warning ends the deal. Can't hit a month? Tell Hel before it ends 👀</li>
+<li>A "Model" tier with no tan quota exists; ask Hel about switching 👀</li>
+<li>The contract has confidentiality, non-disparagement and no-competing-promotion clauses 👀</li>
+<li><span class="tag">To do</span> Hel's Oct 12 DM asked you to shoot product photos; the availability form is pinned in #glamore-ambassadors ✅. Done? ⚠️ Suggested reply (Slack → DMs → Hel Hardinger):<div class="paste">Hey Hel! So sorry for the slow reply, I just got Slack set up on my phone. Yes, I'd love to shoot the product photos! I'll fill out the availability form today. What dates and locations are you thinking?</div>
+</li>
+<li>Only if you miss a month (change the months):<div class="paste">Heads up: I won't hit all of October's ambassador requirements. I'll book my November tan this week and get content to Slack within 72 hours. Thanks for understanding!</div>
+</li>
+<li>Booking: pick a time with a free 72-hr window after it, around POP shifts 👀</li>
+<li>Promo copy: your "glow" keyword, body-positive, conversational, no em dashes or italics. Name ideas: Glow Getters, Radiance Reps 👀</li>
+<li>Thank-you party: no date as of Nov 23 ✅ · Hel's survey form: status ⚠️</li>
+</ul>
+    </details>
+    <p class="group" id="h-claude">🤖 Claude + AI</p>
+
+    <details>
+      <summary>GitHub planning site + Code tab<span class="tag">Done</span></summary>
+      <p class="meta">Nov 25, 2026 · <a href="https://claude.ai/chat/0328afb9-ad83-4461-b415-d909ea0898a1">https://claude.ai/chat/0328afb9-ad83-4461-b415-d909ea0898a1</a></p>
+<ul class="steps">
+<li>Code copies your GitHub repo to a cloud computer, changes it and pushes a branch. That's why it needs GitHub ✅</li>
+<li>Code won't fix Claude's mistakes (same Claude); it can run and test its own work 👀</li>
+<li>Canva doesn't need Code; it runs through the Canva connector in a regular chat 👀</li>
+<li>Free GitHub only publishes from a public repo; private sites need a paid plan ✅ <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages">https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages</a></li>
+<li>Steps, all done Nov 25, 2026 ✅<ol class="steps">
+<li>GitHub: sign in (person icon) → ≡ → All repositories → New → "planning" → Public → Add README → Create repository</li>
+<li>Claude app → Code tab → Connect GitHub → approve</li>
+<li>Repo chip → <b>planning · main</b></li>
+<li>Ask Code to build or update the page; it pushes a branch</li>
+<li>Merging is automatic in this repo (CLAUDE.md rule)</li>
+<li>Pages (phone, signed in): planning → More ▾ → Settings → Pages → scroll below the menu → Deploy from a branch → None ▾ → main, / (root) → Save</li>
+<li>Live at <a href="https://mikesadowski525.github.io/planning">https://mikesadowski525.github.io/planning</a> about 1 min after each merge</li>
+</ol>
+</li>
+<li>To update: paste new items in the Code tab; Claude edits, merges and checks the live page ✅</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>Claude Instructions: the CapCut fix<span class="tag">To do</span></summary>
+      <p class="meta">Nov 24, 2026 · <a href="https://claude.ai/chat/ddf7eadc-97cb-4883-a54e-8d1677cbc806">https://claude.ai/chat/ddf7eadc-97cb-4883-a54e-8d1677cbc806</a></p>
+<ul class="steps">
+<li>Status: not done; your profile rules still say never CapCut ✅</li>
+</ul>
+<ol class="steps">
+<li>Tap your initials/profile icon ⚠️ (iPhone layout not confirmed; web: initials at lower left ✅)</li>
+<li>Settings → Your Claude (older layout: Account) ✅</li>
+<li>Tap the Instructions box (older: "Instructions for Claude") ✅</li>
+<li>In SETUP, find this text:<div class="paste">Edit in TikTok, Canva, iPhone Photos (never LumaFusion/CapCut)</div>
+</li>
+<li>Replace it with:<div class="paste">Edit: 1) CapCut Pro (main) 2) Reels/TikTok in-app while uploading · Canva for fliers, logos, misc · Never LumaFusion</div>
+</li>
+<li>At the end of STEPS, paste:<div class="paste">- Any "edit/change/fix X" step → include the exact old text AND the full replacement text, ready to paste. Never send me to edit something without what to change it to.</div>
+</li>
+<li>Tap Save 👀</li>
+</ol>
+<ul class="steps">
+<li>Also: "50 characters max" fights project rule 5 in ORGANIZATION ✅</li>
+<li>Help: <a href="https://support.claude.com/en/articles/10185728-understanding-claude-s-memory">https://support.claude.com/en/articles/10185728-understanding-claude-s-memory</a> ✅</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>Rules you&#x27;ve taught Claude</summary>
+      <p class="meta">Apr 10 – Nov 24, 2026</p>
+<ul class="steps">
+<li>Copy-paste text must be complete, never trimmed (Apr 10–13). Saved text 👀<div class="paste">CRITICAL - READ EVERY TIME: When Mikey asks you to write instructions, guidance, or documentation for him to copy/paste somewhere else — ALWAYS include ALL the context and details from the conversation history. Don't summarize. Don't abbreviate. Give him the complete version with all specifications, inputs, outputs, and reasoning. If you wrote something detailed earlier in the conversation, make sure it's in the final copy/paste version. Mikey will call you out if you forget stuff.</div>
+</li>
+<li>Never imply your project or file doesn't exist; say "I can only see context from the current conversation" (Apr 14) 👀 <a href="https://claude.ai/chat/9206459d-bc14-4fbb-8112-6f0c23716eeb">https://claude.ai/chat/9206459d-bc14-4fbb-8112-6f0c23716eeb</a></li>
+<li>Crisis / step-by-step mode, 6 rules (Apr 23) 👀<ol class="steps">
+<li>Read the full context; never re-ask a goal already given</li>
+<li>Never ask a question whose answer is already known</li>
+<li>One instruction at a time; wait for your cue</li>
+<li>"Step by step" means wait, with nothing front-loaded</li>
+<li>Screenshots are the source of truth; read every pixel</li>
+<li>No clarifying questions mid-crisis; infer instead</li>
+</ol>
+</li>
+<li>"Remember this:" with nothing after it saved nothing (Apr 27) 👀 <a href="https://claude.ai/chat/0f791941-6f19-42a5-b797-7bdf471842e6">https://claude.ai/chat/0f791941-6f19-42a5-b797-7bdf471842e6</a></li>
+<li>Summaries (May 17): 10-word overview → bullets only → tied to your work → no fluff. Any wording triggers it ("simplify this," "TL;DR," "quick version") 👀 <a href="https://claude.ai/chat/73b9c31e-6f25-4106-bdd3-1f9ce82737a5">https://claude.ai/chat/73b9c31e-6f25-4106-bdd3-1f9ce82737a5</a><div class="paste">Break this down: 10-word overview, bullets, relate to my work, no fluff.</div>
+</li>
+<li>Direct answers (May 17), saved as 👀<div class="paste">When asked a direct question, answer directly first—no vague hedging. If you don't know, say so. Count/measure accurately. Don't explain or defend after. Just the fact.</div>
+</li>
+<li>No "potentially" about apps you use, and don't question why a topic matters to you (May 17) 👀 <a href="https://claude.ai/chat/287f31a8-5df0-48a8-80a3-d39364595315">https://claude.ai/chat/287f31a8-5df0-48a8-80a3-d39364595315</a></li>
+<li>Any edit step must include the old text and the new text (Nov 24) 👀</li>
+<li>Your first preferences text (Apr) was later replaced by Mikey's rules 👀</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>Project rules setup + testing</summary>
+      <p class="meta">Nov 23–24, 2026 · <a href="https://claude.ai/chat/d6a152af-9cce-4307-96e2-cf6c0e94453e">https://claude.ai/chat/d6a152af-9cce-4307-96e2-cf6c0e94453e</a> · <a href="https://claude.ai/chat/7f816c48-24f9-4e3c-8157-650722a360cc">https://claude.ai/chat/7f816c48-24f9-4e3c-8157-650722a360cc</a></p>
+<ul class="steps">
+<li>The ORGANIZATION Instructions box applies to every chat in the project ✅ <a href="https://support.claude.com/en/articles/9519177">https://support.claude.com/en/articles/9519177</a></li>
+<li>Web: claude.ai/projects → ORGANIZATION → <b>Set project instructions</b> → paste → <b>Save instructions</b> ✅. iPhone path not confirmed; use the web ⚠️</li>
+<li>Your 21 rules are in the box ✅</li>
+<li>Length: classic Projects have no published limit 👀; the 16,000-character cap is for the new Projects beta 👀; aim for about 1,500 characters 👀</li>
+<li>Your profile still says "50 characters max" and "never LumaFusion/CapCut" ✅. Change both, or they fight rules 5 and 18 (see Claude Instructions: the CapCut fix)</li>
+<li>Which rule wins: latest message → project instructions → manual → brief → old profile settings 👀</li>
+<li>Plans: two Claude help pages disagree on whether project instructions are paid-only ⚠️</li>
+<li>Memory tips 👀<ul class="steps">
+<li>Turn off "Use account memory" on the project page if old summaries override real sources</li>
+<li>Turn off Memory for one chat in the "+" menu before the first message</li>
+</ul>
+</li>
+<li>Test in a NEW ORGANIZATION chat 👀<ol class="steps">
+<li>Say "hi" → one-sentence reply</li>
+<li>Ask "what's rule #2?"</li>
+<li>Ask something it can't know → it asks for a screenshot</li>
+<li>Push back on a right answer → it holds</li>
+<li>Give a 3-step task → it ends with a Done / Not done list</li>
+<li>Repeat 1–3 on the web</li>
+<li>Ask "what's on my to-do list?" → Claude + Reddit first</li>
+<li>Ask about AT&amp;T → no questions</li>
+</ol>
+</li>
+<li>Type <b>RULES</b> any time to make it reread the rules and redo its last answer 👀</li>
+<li>Rule 20 (priorities) goes stale; update it when priorities change 👀</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>Handoff brief + AI operating manual</summary>
+      <p class="meta">Nov 23–24, 2026 · <a href="https://claude.ai/chat/d6a152af-9cce-4307-96e2-cf6c0e94453e">https://claude.ai/chat/d6a152af-9cce-4307-96e2-cf6c0e94453e</a></p>
+<ul class="steps">
+<li>Project files ✅: mikey-handoff-brief.md (what to work on) · mikey-ai-operating-manual.md (how to work) · slack.md</li>
+<li>Original Claude Doc "Mikey Handoff Brief — Nov 2026": <a href="https://claude.ai/artifact/U16BjjZuXYCQnY2Gp9wYMA">https://claude.ai/artifact/U16BjjZuXYCQnY2Gp9wYMA</a> 👀</li>
+<li>The manual covers: which rule wins, what you want, the certainty gate, a pre-send checklist, a new-chat routine, how to talk to you, when to ask, verification, the 6-part error rundown, ranked mistakes, root causes, check-ins 👀</li>
+<li>Certainty gate: never move forward on anything not ✅ or 👀; look it up, or ask for the one thing needed 👀</li>
+<li>New-chat routine: check the date, read both files, then read the end of the latest real chat (never a summary) 👀</li>
+<li>Check-ins are open items, not your mistakes 👀</li>
+<li><span class="tag">To do</span> Your Instructions box doesn't tell new chats to read these files ⚠️. Add this at the top:<div class="paste">0. Before your first reply in any chat, read claude/mikey-ai-operating-manual.md and claude/mikey-handoff-brief.md.</div>
+</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>Making Claude more accurate</summary>
+      <p class="meta">Nov 24, 2026 · <a href="https://claude.ai/chat/d6a152af-9cce-4307-96e2-cf6c0e94453e">https://claude.ai/chat/d6a152af-9cce-4307-96e2-cf6c0e94453e</a></p>
+<ul class="steps">
+<li>The help article is real: "Claude is providing incorrect or misleading responses. What's going on?" (Mar 16, 2026) ✅</li>
+<li>Ranked fixes 👀<ol class="steps">
+<li>"I don't know → ask me for X → stop" rule at the top of the project instructions</li>
+<li>Short rules, critical ones first</li>
+<li>A fresh chat per task; lasting facts in project files</li>
+<li>"Quote the source line first, then answer; no quote → say so"</li>
+<li>A done-check before "complete": what was done and what wasn't</li>
+<li>Use the most honest model available</li>
+<li>Web search for anything current; open the cited sources yourself</li>
+<li>Extended thinking for high-stakes facts</li>
+<li>Anti-flip-flop rule: change answers only for new evidence ⚠️ untested</li>
+<li>Keep profile instructions to 1–2 universal rules</li>
+<li>Research mode: sourced, but the reports are long ⚠️</li>
+</ol>
+</li>
+<li>Why it happens 👀: training rewards confident guessing, raters prefer agreement, long rule lists and long chats dilute instructions</li>
+<li>Couldn't verify ⚠️: r/ClaudeAI posts from Aug–Nov 2026, an April "iOS ignores project instructions" bug, an iPhone path for editing instructions</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>Optimizing Claude settings</summary>
+      <p class="meta">Oct 7, 2026 · Free</p>
+<ul class="steps">
+<li>Effort: tap the model name near Send → Effort → <b>Max</b> ✅. 2ND BEST: High, if you hit usage limits faster ✅</li>
+<li>Thinking is always on with Opus 5.5 ✅</li>
+<li>Turn on: Memory, chat search, Code execution 👀</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>Claude model for creative work</summary>
+      <p class="meta">Nov 3, 2026</p>
+<ul class="steps">
+<li>BEST: Opus 5.5 · High effort for editing + song picks 👀</li>
+<li>No separate "Canva model"; the Canva connector is already on ✅</li>
+<li>The Spotify connector is on too; ask for song picks directly ✅</li>
+<li>Canva lists the connector under its paid plans ⚠️</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>Claude iPhone app redesign / Projects tab</summary>
+      <p class="meta">Nov 24, 2026</p>
+<ul class="steps">
+<li>Rolled out from Nov 20, 2026, iOS first; needs iOS 26+ ✅ (your 26.7.1 qualifies)</li>
+<li>Bottom tabs: Chat · Projects · Code · Artifacts ✅</li>
+<li>Settings: side menu → gear or your initials at the bottom 👀</li>
+<li>No source confirmed a New project button on iPhone ⚠️</li>
+<li>The Instructions box only shows on the project's own page, not inside a chat 👀</li>
+<li>Leave chats; don't delete them, because their history lives there 👀</li>
+<li>Chat search only covers the project you're in, or only non-project chats when you're outside one ✅</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>Claude chat tips</summary>
+      <p class="meta">Nov 2026</p>
+<ul class="steps">
+<li>Long chats auto-summarize and blur small details; ask Claude to keep a running list 👀</li>
+<li>Tap-to-answer: ask for multiple-choice questions with a recommended pick; reply like "1B 2C 3: ___" 👀</li>
+<li>Type <b>RULES</b> to make Claude reread your rules and redo its last answer</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>Daily Agent Brief (scheduled task)</summary>
+      <p class="meta">Oct 21–28, 2026 · <a href="https://claude.ai/chat/5deff150-6cd9-4007-94a1-08fcaf32cdb2">https://claude.ai/chat/5deff150-6cd9-4007-94a1-08fcaf32cdb2</a></p>
+<ul class="steps">
+<li>BEST: a scheduled task; it runs in the cloud with your phone and Mac off ✅. 2ND BEST: a skill, which only runs when you ask 👀</li>
+<li>Paid plans only ✅. Sources: <a href="https://support.claude.com/en/articles/13854387-schedule-recurring-tasks-in-claude-cowork">https://support.claude.com/en/articles/13854387-schedule-recurring-tasks-in-claude-cowork</a> · <a href="https://support.claude.com/en/articles/15520349-use-claude-cowork-on-web-desktop-and-mobile">https://support.claude.com/en/articles/15520349-use-claude-cowork-on-web-desktop-and-mobile</a></li>
+<li>Setup: tell Claude what to do and when, in a chat 👀</li>
+<li>Find it: ≡ → Scheduled → Daily Agent Brief 👀 (not re-checked since the Nov 20 redesign ⚠️)</li>
+<li>Status Nov 25 ✅: on, daily 9:44 AM CT · last run Nov 24 succeeded · push on · no approval needed · old version paused</li>
+<li>Report-only: reads Gmail, Drive, Slack and the web; never replies, posts or sends to anyone; one email, to you ✅</li>
+<li>Canva: max 2 new drafts per run, 1080×1920, titled "[Event] promo draft – Agent"; checks for an existing design first ✅</li>
+<li>Sections ✅: ⏰ Due soon · unanswered emails · Slack 48-hr replies · commitments · Glamoré+ tracker · calendar adds · 3 POP TikTok ideas · promo drafts · Milwaukee LGBTQ/arts digest · new Drive footage (last 24 hrs)</li>
+<li>Test: say "run test" → push + "[TEST] Daily Agent Brief" email; Canva skipped; takes a few minutes 👀</li>
+<li>To change it, ask Claude to update this task. A new one makes duplicates 👀</li>
+<li><span class="tag">To do</span> It still lists your editing apps as TikTok, Canva and iPhone Photos, with no CapCut 👀</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>Connecting Gmail, Drive, Slack + text alerts</summary>
+      <p class="meta">Oct 21–28, 2026 · <a href="https://claude.ai/chat/5deff150-6cd9-4007-94a1-08fcaf32cdb2">https://claude.ai/chat/5deff150-6cd9-4007-94a1-08fcaf32cdb2</a></p>
+<ul class="steps">
+<li>Gmail + Drive: Connect on the card in chat → approve 👀. Both connected ✅; the brief can only read Drive 👀</li>
+<li>Slack: Connect → sign in → Allow 👀. Connected Oct 28 ✅<ul class="steps">
+<li>"Request to install" = a Slack admin must approve ✅</li>
+<li>Claude reads Slack and only sends when you ask 👀</li>
+<li>Which plans work: sources disagreed ⚠️ <a href="https://claude.com/docs/connectors/slack">https://claude.com/docs/connectors/slack</a></li>
+</ul>
+</li>
+<li>AT&amp;T ended email-to-text in June 2025 ✅ <a href="https://oit.princeton.edu/news/att-discontinues-email-text-and-text-email-service">https://oit.princeton.edu/news/att-discontinues-email-text-and-text-email-service</a> · <a href="https://www.androidauthority.com/atnt-email-to-text-feature-shutdown-3539223/">https://www.androidauthority.com/atnt-email-to-text-feature-shutdown-3539223/</a></li>
+<li>BEST: push notifications, already on. The only alert that fires with the Mac closed 👀</li>
+<li>2ND BEST: the free iMessage connector. Only works while the Mac is awake with Claude Desktop open ✅. A text to yourself may not buzz ⚠️<ol class="steps">
+<li>Install Claude Desktop: <a href="https://claude.com/download">https://claude.com/download</a> ✅</li>
+<li>Settings → Connectors → Browse connectors → iMessage → Install ✅</li>
+<li>Allow the Messages + Contacts pop-ups ✅ (may need Full Disk Access ⚠️)</li>
+<li>Turn on Messages in iCloud ⚠️</li>
+</ol>
+</li>
+<li>Skipped, since you're mostly on your phone 👀</li>
+<li>Sources: <a href="https://claude.com/connectors/read-and-send-imessages">https://claude.com/connectors/read-and-send-imessages</a> · <a href="https://support.anthropic.com/en/articles/11724452-browsing-and-connecting-to-tools-from-the-directory">https://support.anthropic.com/en/articles/11724452-browsing-and-connecting-to-tools-from-the-directory</a></li>
+</ul>
+    </details>
+
+    <details>
+      <summary>Adding events + reminders from screenshots</summary>
+      <p class="meta">Oct 21 – Nov 25, 2026</p>
+<ul class="steps">
+<li>Screenshot a text, email or appointment → send it in a regular chat → Claude adds it → tap <b>Allow</b> 👀</li>
+<li>Alerts: 2 hrs, 1 day, 1 week before 👀</li>
+<li>Goes on your "Work" calendar unless you name another 👀</li>
+<li>A reminder with no time = noon the next day 👀</li>
+<li>Claude checks for duplicates first 👀</li>
+<li>It times out in the Code tab; use a regular chat ⚠️</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>Handwritten notes → reminders</summary>
+      <p class="meta">Oct 28, 2026 · <a href="https://claude.ai/chat/faf3ef6a-8440-40f0-a88f-441047514874">https://claude.ai/chat/faf3ef6a-8440-40f0-a88f-441047514874</a></p>
+<ul class="steps">
+<li>Send a photo of the page; Claude asks about unclear words instead of guessing 👀</li>
+<li>Made: a POP Bingo event (alerts 2 hrs, 1 day, 1 week); reminders to schedule cast interviews, ask off for the second bingo, get the poster file from Spencer 👀</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>Tracing where a fact came from</summary>
+      <p class="meta">Oct 21 + Oct 28, 2026 · <a href="https://claude.ai/chat/82136623-37f7-4eb5-b986-c220a6fc2fee">https://claude.ai/chat/82136623-37f7-4eb5-b986-c220a6fc2fee</a></p>
+<ul class="steps">
+<li>Ask "where did you hear X?" → Claude checks its memory notes, searches Gmail and opens the actual email 👀</li>
+<li>Example: "add weekday specials to POS" came from Marcus's Oct 16 email (empty body, no deadline); the "due soon" was the brief's own guess 👀</li>
+<li>Example: a 4–5 PM prep block was made up by the agent ⚠️; the events behind it were real 👀</li>
+<li>Rule: brief wording can be a guess, so check the source before acting 👀</li>
+</ul>
+    </details>
+    <p class="group" id="h-planning">📅 Planning</p>
+
+    <details>
+      <summary>Visual planner: Canva + iPhone Calendar/Reminders</summary>
+      <p class="meta">Nov 24–25, 2026 · <a href="https://claude.ai/chat/1bd41c05-ac14-42e8-9a36-687746e3f463">https://claude.ai/chat/1bd41c05-ac14-42e8-9a36-687746e3f463</a></p>
+<ul class="steps">
+<li>BEST: iPhone Calendar + Reminders, plus one Canva overview 👀. 2ND BEST: a self-hosted web page 👀</li>
+<li>Canva planner, 9 pages, 16:9: <a href="https://canva.link/b9w60p0kq5srzpj">https://canva.link/b9w60p0kq5srzpj</a> 👀</li>
+<li>Pages: cover + color key, priority to-dos, weekly routine, month grids Nov–Apr 👀</li>
+<li>Colors: gold = Golden Girls/Purse String · pink = Glamoré+ · blue = Claude + Reddit · green = POP · gray = life admin 👀</li>
+<li>Fixed: December dates (Dec 1 = Tuesday), rehearsals Sun–Wed, the "Glororé+" typo and missing "72 hrs", February + March weekdays, made-up Glamoré+ dates, show color off Dec 9 👀</li>
+<li>Still seeing old dates? Close and reopen the design 👀</li>
+<li><span class="tag">To do</span> The Nov, Jan and Apr grids aren't confirmed ⚠️; Claude asked which date looked wrong 👀</li>
+<li>Phone adds timed out in the Code tab, so nothing is confirmed on your phone ⚠️. In a regular ORGANIZATION chat, send:<div class="paste">add my planner events to my calendar and reminders</div>
+</li>
+<li>What it tried to add 👀<ul class="steps">
+<li>Reminders: join the 3 subreddits; Glamoré+ (next tan, intro video, Hel's photoshoot DM + survey); build templates; health + dental insurance by Dec 15; call AT&amp;T about the trade-in</li>
+<li>Events: insurance Dec 15 + Jan 15, NDOW check-in Jan 11, Glamoré+ end Apr 1</li>
+</ul>
+</li>
+<li>Offered, not done: a soft "little push" idea box per page (15-sec POP trend test, one Reddit scroll a day, a BTS clip) 👀</li>
+<li>Calendar + Reminders are free; Canva is paid (you have it) 👀</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>Priorities + to-do list</summary>
+      <p class="meta">Nov 22–24, 2026 · <a href="https://claude.ai/chat/7f816c48-24f9-4e3c-8157-650722a360cc">https://claude.ai/chat/7f816c48-24f9-4e3c-8157-650722a360cc</a></p>
+<ul class="steps">
+<li>Format: 10 multiple-choice or fill-in questions at a time; reply like "1B 2C 3: ___" 👀</li>
+<li>Ranked to-dos 👀<ol class="steps">
+<li>Learn Claude + Reddit</li>
+<li>Client video work</li>
+<li>Glamoré+: next tan, intro video, ambassador to-dos</li>
+<li>Template system: CapCut edits first, then Canva graphics, shot lists, caption cards (planning in Google Sheets/Calendar)</li>
+<li>Health + dental insurance</li>
+<li>Call AT&amp;T about the phone trade-in</li>
+</ol>
+</li>
+<li>Already answered, so no AI should re-ask 👀<ul class="steps">
+<li>Reddit goals: all of them (you have an account, barely used)</li>
+<li>Why CapCut: consistency + the highest-quality downloads</li>
+<li>Templates: all kinds, CapCut first</li>
+<li>POP pain points: ideas, editing time, trends, posting consistency</li>
+<li>"Use Claude better" = unused features, less back-and-forth</li>
+<li>"Not just Claude" = real people, current creator info</li>
+<li>Tan timing is tricky because of the post-tan content windows</li>
+</ul>
+</li>
+<li>Never checked: CapCut free vs paid export quality ⚠️</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>Reddit starter</summary>
+      <p class="meta">Nov 22–25, 2026 · <a href="https://claude.ai/chat/7f816c48-24f9-4e3c-8157-650722a360cc">https://claude.ai/chat/7f816c48-24f9-4e3c-8157-650722a360cc</a></p>
+<ul class="steps">
+<li>Why: real people and current info, since apps change constantly 👀</li>
+<li>Join ✅ (links not opened ⚠️)<ul class="steps">
+<li>r/ClaudeAI (~1.3M members): <a href="https://www.reddit.com/r/ClaudeAI">https://www.reddit.com/r/ClaudeAI</a></li>
+<li>r/CapCut (fan-run, not CapCut's): <a href="https://www.reddit.com/r/CapCut">https://www.reddit.com/r/CapCut</a></li>
+<li>r/VideoEditing: <a href="https://www.reddit.com/r/VideoEditing">https://www.reddit.com/r/VideoEditing</a></li>
+</ul>
+</li>
+<li>Join: Reddit app → 🔍 → type the name → Join 👀 (exact App Store name not checked ⚠️)</li>
+<li>Search: open the subreddit → 🔍 → 2–4 words → Top → Past year ⚠️ (button spot not confirmed)</li>
+<li>Read the top 3 comments on busy posts 👀</li>
+<li>Only trust app tips from the last 3 months ⚠️ (Claude's rule, not Reddit's)</li>
+<li>Loop: screenshot → send to Claude → steps + outdated flags 👀</li>
+<li>First searches 👀: "tips for non coders" (r/ClaudeAI), "reusable template" (r/CapCut), "interview tips" (r/VideoEditing)</li>
+<li>Time box: 20 min max 👀 · Free ✅ · Joined yet? ⚠️</li>
+</ul>
+    </details>
+    <p class="group" id="h-work">🍸 Work: POP + bar</p>
+
+    <details>
+      <summary>OptiSigns video playback (Samsung TVs)</summary>
+      <p class="meta">Oct 22 + Oct 28, 2026 · Free within your OptiSigns setup</p>
+<ul class="steps">
+<li>Two TVs: Entry 55" CU7000 (rotated 90°), Patio 32" N5300 (rotated 270°) 👀</li>
+<li>Problem 1: Canva MP4s won't play. Cause: no audio track, so Samsung Tizen rejects them ✅ (after testing)</li>
+<li>Problem 2: videos play sideways or stretched. Cause: OptiSigns rotates images, not videos ✅</li>
+<li>Canva fix ✅<ol class="steps">
+<li>Build at <b>1920×1080</b> (not 1080×1920), art pre-rotated 90° clockwise, stretched to fill</li>
+<li>Add a music track with volume near zero. Not muted, so the audio track stays</li>
+<li>Export at <b>1080p</b>, never 4K (4K failed on the 32")</li>
+</ol>
+</li>
+<li>OptiSigns: playlist <b>Scale Video → Stretch</b>; keep <b>Scale Image → Fit</b> ✅</li>
+<li>Don't change the Orientation setting; it's right for images ⚠️</li>
+<li>Keep the Ads playlist under 15 items / 150MB (Samsung limit) ⚠️</li>
+<li>If an OptiStick runs a TV: Video Player Setting → Surface View → Texture View fixes all videos at once ⚠️ unconfirmed</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>Toast POS: discounts</summary>
+      <p class="meta">Oct 30, 2026 · Free within Toast</p>
+<ul class="steps">
+<li>Path: <b>Finance panel → scroll to "Related" → Settings → Discounts &amp; promo codes</b> ✅</li>
+<li>Don't use the similar Settings under "Accounting"; it's the wrong one ⚠️</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>DoorDash tablet brightness (Knox-locked)</summary>
+      <p class="meta">Jul 30, 2026 · Free</p>
+<ul class="steps">
+<li>Try: a two-finger swipe down for the quick panel, or the gear in the DoorDash Merchant app 👀</li>
+<li>These tablets are Knox-locked; the full Android Settings app is blocked on purpose ⚠️</li>
+<li>Check the case isn't covering the light sensor (top bezel near the camera); plug into a wall outlet (battery saver caps brightness) 👀</li>
+<li>Last resort: DoorDash Merchant Support; ask for a remote display-config change or a free replacement ✅ (phone number left out)</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>POP cocktail specs</summary>
+      <p class="meta">Aug 2026</p>
+<ul class="steps">
+<li>CYB (Can You BEE-lieve?): 2oz Absolut, 1oz lemon juice, 0.5oz honey syrup, 0.25oz prickly pear syrup; shake with ice, strain over ice in a Jupiter glass; top with soda and a dash of grenadine; lemon wheel + cherry 👀</li>
+<li>The Elijah 6:9: muddled orange + cherries, bitters, sugar, a double pour of Elijah Craig, a splash of sweet soda (Wisconsin old fashioned). "Double pour" stays on the bar spec card, not the printed menu 👀</li>
+<li>Liquor pricing method left out (money)</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>One-on-one agenda with Marcus</summary>
+      <p class="meta">Aug 26, 2026</p>
+<ul class="steps">
+<li>What's working / not since last time · bar-ops pain points (inventory, ordering, staffing) · TikTok/content performance · upcoming events · ask for feedback · flag blockers 👀</li>
+<li>High-value question: "What does a great version of my role look like to you?" 👀</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>Vape vending machine license (Milwaukee)</summary>
+      <p class="meta">Aug 18, 2026</p>
+<ul class="steps">
+<li>City of Milwaukee Cigarette, Tobacco, and Vape License: $100/year ✅</li>
+<li>City Clerk's License Division, City Hall Room 105 ✅</li>
+<li>Forms ✅: ccl-busapp, ccl-busplan, CTV-100 (check "Electronic Vaping Devices" + "Vending machine"), CTV-101 per owner/agent, CTV-102 for an LLC/corp, plus an 8.5×11 floor plan</li>
+<li>Attach a physical copy of the Wisconsin Seller's Permit ✅</li>
+<li>Nicotine only, not THC ⚠️</li>
+</ul>
+    </details>
+    <p class="group" id="h-tech">💻 Mac, iPhone + TV</p>
 
     <details>
       <summary>iPhone Mirroring pop-up on Mac</summary>
-      <ul class="steps">
-        <li>Settings live in <b>System Settings → AirDrop &amp; Continuity</b>, not Desktop &amp; Dock 👀</li>
-        <li>Stop auto-launch: open the <b>iPhone Mirroring</b> app → menu bar <b>iPhone Mirroring → Settings → "Ask Every Time"</b> (or <b>Revoke Access</b> to fully disconnect) ✅</li>
-        <li>Cost: free</li>
-      </ul>
+      <p class="meta">May 6 – Nov 2026 · Free</p>
+<ul class="steps">
+<li>Why: the notification you clicked was your iPhone's, mirrored to the Mac, so clicking it opens iPhone Mirroring 👀</li>
+<li>Settings live in System Settings → <b>AirDrop &amp; Continuity</b> (not Desktop &amp; Dock) 👀</li>
+<li>BEST fix: open the iPhone Mirroring app → menu bar <b>iPhone Mirroring → Settings → Ask Every Time</b> (or Revoke Access to disconnect) ✅</li>
+<li>Stop iPhone notifications on the Mac: System Settings → Notifications → bottom → <b>Allow notifications from iPhone</b> off 👀. Still triggers? Restart the Mac ⚠️</li>
+<li>"Remote for Mac" (by Cherpake) was a separate auto-launcher in Login Items ⚠️. Remove it: System Settings → General → Login Items → remove → delete it from Applications → quit the process → empty Trash ✅</li>
+</ul>
     </details>
 
     <details>
-      <summary>Manage subscriptions (Apple + non-Apple)</summary>
-      <ul class="steps">
-        <li>iPhone: <b>Settings → [your name] → Subscriptions</b> (or App Store → profile → Subscriptions) ✅</li>
-        <li>Mac: <b>App Store → your name → View Information → Manage</b> ✅</li>
-        <li>Audible bills through Amazon, not Apple ⚠️. Manage at amazon.com (<b>Account → Memberships &amp; Subscriptions</b>) or audible.com; cancel in a browser</li>
-        <li>Cost: free</li>
-      </ul>
+      <summary>Mirroring a MacBook to TVs + a projector</summary>
+      <p class="meta">Apr 11 – Oct 27, 2026</p>
+<ul class="steps">
+<li>BEST for every TV or projector: a USB-C to HDMI adapter (~$15–20, wired, no compression) ✅</li>
+<li>Same Wi-Fi check: Mac System Settings → Network → Wi-Fi → Details → TCP/IP; TV Menu → Network → Network Status 👀</li>
+<li>The free App Store "Mirror Screen to Smart TV" (dev JingZhi He) didn't detect your TV (DLNA errors) ⚠️</li>
+<li>Older Samsung J/JU-series (remote BN59-01199F, 2015–17) predate AirPlay 2: no wireless mirroring ⚠️. 2ND BEST: a Miracast stick (~$30) or the AirBeamTV app ⚠️</li>
+<li>Thunderbolt Bridge / Ethernet showing "Not connected" is normal 👀</li>
+<li>Yersida projector: its Miracast (MCAST) is Android/Windows only ⚠️. Fire TV workaround: install AirScreen (search "airscreen") as an AirPlay bridge ⚠️. No official manual online; try its FCC ID at <a href="https://fccid.io">https://fccid.io</a> ⚠️</li>
+<li>LG 32LN530B-UA as a second monitor: 32", 1366×768, 2 HDMI (use HDMI IN 2 (MHL)), made 2014. Manual: <a href="https://www.manualslib.com/manual/2397226/Lg-32ln530b.html">https://www.manualslib.com/manual/2397226/Lg-32ln530b.html</a> 👀</li>
+</ul>
     </details>
 
     <details>
-      <summary>iMessage "Send Later"</summary>
-      <ul class="steps">
-        <li>Real in iOS 26, but it only appears after you've typed text in the message field. Empty field = no option 👀</li>
-        <li>Cost: free</li>
-      </ul>
+      <summary>Mac cursor size, mirror lag + Zoom error 1132</summary>
+      <p class="meta">Jun 16, 2026 · Free</p>
+<ul class="steps">
+<li>Cursor size: System Settings → Accessibility → Display → <b>Pointer size</b> (colors there too) ✅</li>
+<li>Mirror cursor lag = Wi-Fi congestion: restart the router, use 5 GHz, close heavy apps. Known M1 mirroring bug → restart the mirror session ⚠️</li>
+<li>Zoom error 1132 = an account/device-level ban; a hotspot or new IP won't fix it ⚠️. Call Zoom support by phone (better than a ticket on free accounts) and explain it was accidental ✅</li>
+</ul>
     </details>
 
     <details>
-      <summary>App Store payment wall (installing free apps)</summary>
-      <ul class="steps">
-        <li>Stuck in a payment-method loop (can't even download PayPal)? Fix the card outside the App Store ✅</li>
-        <li><b>Settings → [your name] → Payment &amp; Shipping</b> → add or replace a working card ✅</li>
-        <li>Free apps stay free, but Apple wants a valid method on file ✅</li>
-      </ul>
+      <summary>Mac windows hiding + dictation</summary>
+      <p class="meta">Apr 23, 2026 · <a href="https://claude.ai/chat/ed13d606-65f9-4c5b-8558-8bfe19a5ad8d">https://claude.ai/chat/ed13d606-65f9-4c5b-8558-8bfe19a5ad8d</a></p>
+<ul class="steps">
+<li>Bring an app forward: Cmd+Tab. If the Dock fails: Cmd+Space → "System Settings" 👀</li>
+<li>Stage Manager was already off ✅</li>
+<li>System Settings → Desktop &amp; Dock → "Click wallpaper to reveal desktop" → <b>Only in Stage Manager</b> 👀</li>
+<li>Apps on separate screens: 3-finger swipe up → drag the windows into one Space 👀</li>
+<li>"Displays have separate Spaces": Claude's instruction contradicted itself ⚠️</li>
+<li>Dictation: System Settings → Keyboard → Dictation on ✅. Start with the Microphone key or "Press Fn Twice" ✅. Stop with Esc or the same key; it stops after 30 sec of silence ✅</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>Mac calling through iPhone</summary>
+      <p class="meta">Jul 3, 2026 · Free</p>
+<ul class="steps">
+<li>The Mac has no cellular, so it relays calls through the iPhone ✅</li>
+<li>Independent calls: "Wi-Fi Calling for other devices" (carrier-dependent) ⚠️</li>
+<li>Fast options: FaceTime Audio, or Google Voice in a browser (free US calls) 👀</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>iPhone alarms + Settings search</summary>
+      <p class="meta">May 13, 2026 · <a href="https://claude.ai/chat/2466ac01-4f2f-4033-a90f-4900cdb546c6">https://claude.ai/chat/2466ac01-4f2f-4033-a90f-4900cdb546c6</a></p>
+<ul class="steps">
+<li>Settings → search bar → type the setting (e.g. "HDR") 👀. Searching "alarms" only shows Clock permissions 👀</li>
+<li>Alarms you can't sleep through<ol class="steps">
+<li>Settings → Sounds &amp; Haptics → <b>Ringtone and Alerts</b> slider all the way right ✅</li>
+<li>Same screen → Change with Buttons off ✅</li>
+<li>Silent Mode off (alarms sound anyway) 👀</li>
+<li>Face ID &amp; Passcode → <b>Attention Aware Features</b> off, the top cause of quiet alarms ✅</li>
+<li>Bluetooth off 👀 (optional; alarms also play on the speaker with headphones ✅)</li>
+<li>Clock → each alarm → Sound not "None" (e.g. Radar) ✅</li>
+</ol>
+</li>
+<li>Bonus: a backup alarm on a second device. Your slider was about 3/4; drag it fully right 👀</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>iPhone: SOS, Siri button, screenshot previews, AssistiveTouch</summary>
+      <p class="meta">Apr 2026 · <a href="https://claude.ai/chat/9d674235-66da-4ba0-b1b1-a46be8f2f3a1">https://claude.ai/chat/9d674235-66da-4ba0-b1b1-a46be8f2f3a1</a></p>
+<ul class="steps">
+<li>Emergency SOS: Hold and Release + 5 Button Presses were already off; keep Call After Severe Crash on 👀</li>
+<li>Side + volume held too long = the power-off slider (can't be turned off) 👀</li>
+<li>Long side press = Siri: Settings → Accessibility → Side Button → Press and Hold to Speak ⚠️ (may have moved)</li>
+<li>Screenshot pop-up: Settings → General → Screen Capture → <b>Full-Screen Previews</b> off ✅</li>
+<li>AssistiveTouch: Settings → Accessibility → Touch → AssistiveTouch (a floating button) 👀</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>iPhone quick fixes</summary>
+      <p class="meta">Apr 7 – Oct 7, 2026 · Free</p>
+<ul class="steps">
+<li>Stuck keyboard (Apr 7): tap the dark area above it → swipe down on it → return/done or the down arrow → swipe down on the messages → go home and reopen 👀 <a href="https://claude.ai/chat/652878e9-d25f-45a0-a770-3d462ed85cfb">https://claude.ai/chat/652878e9-d25f-45a0-a770-3d462ed85cfb</a></li>
+<li>Share My Location moved in iOS 26 (Jun 19) ⚠️: in the conversation tap + → Location, or Find My → People 👀</li>
+<li>iMessage "Send Later" (May 13): only appears after you type text in the message field 👀</li>
+<li>Saved Wi-Fi password (Sep 2): Passwords app → the network (Face ID) ✅, or Settings → Wi-Fi → ⓘ → Password ✅</li>
+<li>Photos "Some Results May Not Appear" (Oct 7): the search index was rebuilt in iOS 27 👀. Fix: back up, then update ⚠️ (that chat's iOS version notes look off; check before updating)</li>
+<li>iOS 26 notes (Apr 23, mostly outdated ⚠️): Audio Zoom toggle under Settings → Camera; check it before shoots ⚠️</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>iPhone eSIM / SOS no service</summary>
+      <p class="meta">Aug 16, 2026 · Free</p>
+<ul class="steps">
+<li>Cause: AT&amp;T never provisioned the eSIM at purchase ✅</li>
+<li>Settings → Cellular → <b>Transfer From Nearby iPhone</b> (iOS says to contact the carrier) ✅</li>
+<li>AT&amp;T upgrade orders don't send an activation email 👀</li>
+<li>Before returning the old iPhone: Find My off, then factory reset ✅</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>TP-Link RE315 Wi-Fi extender</summary>
+      <p class="meta">Apr 2026 · <a href="https://claude.ai/chat/9d674235-66da-4ba0-b1b1-a46be8f2f3a1">https://claude.ai/chat/9d674235-66da-4ba0-b1b1-a46be8f2f3a1</a></p>
+<ul class="steps">
+<li>Pick the 2.4G extender network for range; the band doesn't change your bill 👀</li>
+<li>Red LED / "too far from router" → move it halfway between the router and the weak room; all 4 LEDs white = good spot 👀</li>
+<li>Antennas: one straight up, one sideways toward the basement ⚠️ (Claude's idea, not the manual)</li>
+<li>On each device, join the network ending in _EXT (same password as the router) 👀</li>
+<li>Test where you'll use it: <a href="https://fast.com">https://fast.com</a> or <a href="https://www.speedtest.net">https://www.speedtest.net</a>, with cellular off, one device at a time 👀</li>
+<li>Result: basement latency dropped from 661 ms to 46 ms on the MacBook 👀</li>
+<li>Reset: pin, 1 sec. Settings: TP-Link Tether app or <a href="http://tplinkrepeater.net">http://tplinkrepeater.net</a>. Supports OneMesh 👀</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>Chargers, USB-C + price checks</summary>
+      <p class="meta">Oct – Nov 2026</p>
+<ul class="steps">
+<li>BEST charger: Anker 735 (Nano II 65W, 3-port). Covers the Mac; the 17 Pro Max needs 40W for its fastest charge ✅</li>
+<li>With Mac + phone both plugged in, power splits, so the phone charges slower ⚠️</li>
+<li>Your rule: USB-C only, no USB-A ✅</li>
+<li>Toss any brick that buzzes and barely charges; it's failing ⚠️</li>
+<li>Webcam: skip it. Use iPhone <b>Continuity Camera</b> (free) + a Belkin MagSafe mount ✅</li>
+<li>Clip-on light: a Neewer-type rechargeable clip light for phone + laptop ⚠️</li>
+<li>Price checks: give Claude the product + your ZIP; it compares Walmart, Amazon and Best Buy 👀. Prices lag; recheck before buying ⚠️</li>
+<li>Buy-guide scale: 3 = great, 0 = toss 👀</li>
+</ul>
+    </details>
+    <p class="group" id="h-accounts">🔐 Accounts, security + billing</p>
+
+    <details>
+      <summary>Sign in with Apple</summary>
+      <p class="meta">May 17, 2026 · <a href="https://claude.ai/chat/287f31a8-5df0-48a8-80a3-d39364595315">https://claude.ai/chat/287f31a8-5df0-48a8-80a3-d39364595315</a> · <a href="https://claude.ai/chat/73b9c31e-6f25-4106-bdd3-1f9ce82737a5">https://claude.ai/chat/73b9c31e-6f25-4106-bdd3-1f9ce82737a5</a></p>
+<ul class="steps">
+<li>One Apple login replaces passwords across your apps: Face ID, Hide My Email, 2FA built in 👀</li>
+</ul>
+<ol class="steps">
+<li>iPhone: Settings → [your name] → <b>Sign-In &amp; Security</b> → Two-Factor Authentication on ✅</li>
+<li>Mac: System Settings → [your name] → Sign-In &amp; Security → Two-Factor Authentication on 👀</li>
+<li>In an app: tap "Sign in with Apple" → Share My Email or Hide My Email → Face ID 👀</li>
+</ol>
+<ul class="steps">
+<li>Apple links ✅: <a href="https://support.apple.com/en-us/102379">https://support.apple.com/en-us/102379</a> (how to) · <a href="https://support.apple.com/en-us/105078">https://support.apple.com/en-us/105078</a> (Hide My Email) · <a href="https://support.apple.com/en-us/102660">https://support.apple.com/en-us/102660</a> (2FA) · <a href="https://support.apple.com/en-us/102571">https://support.apple.com/en-us/102571</a> (review apps)</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>Chrome profile &quot;Michael (Gabriel)&quot; check</summary>
+      <p class="meta">Oct 24, 2026 · Free</p>
+<ul class="steps">
+<li>That name was just the local Chrome profile on the shared PC, not your Google account 👀</li>
+<li>Verify: open the profile → profile picture (only your email shows) → <a href="https://www.google.com">https://www.google.com</a> top right → repeat in the other profile 👀</li>
+<li>Remove: "Remove account from Chrome" → close the "Sign in" tab with ✕ (enter nothing) → sign out remotely at <a href="https://www.google.com/devices">https://www.google.com/devices</a> 👀</li>
+<li>Security check: <a href="https://myaccount.google.com">https://myaccount.google.com</a> → Recent security events → Your devices → recovery info ✅</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>Fake Apple &quot;security alert&quot; scam</summary>
+      <p class="meta">Jun 18, 2026 · Free</p>
+<ul class="steps">
+<li>That pop-up is phishing (check the fake domain); don't tap it ⚠️</li>
+<li>Settings → Safari → <b>Clear History and Website Data</b> ✅</li>
+<li>If Settings freezes: force quit Safari → restart the iPhone 👀</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>Subscriptions, App Store billing + payment wall</summary>
+      <p class="meta">May 5 – Nov 25, 2026 · Free</p>
+<ul class="steps">
+<li>iPhone subscriptions: Settings → [your name] → Subscriptions (or App Store → profile → Subscriptions) ✅</li>
+<li>Mac: App Store → your name → View Information → Manage ✅</li>
+<li>Audible bills through Amazon, not Apple ⚠️: <a href="https://www.amazon.com">https://www.amazon.com</a> (Account → Memberships &amp; Subscriptions) or <a href="https://www.audible.com">https://www.audible.com</a>; cancel in a browser</li>
+<li>Update the card: Settings → [your name] → <b>Payment &amp; Shipping</b> ✅. Free apps still need a valid method ✅</li>
+<li>Stuck in a payment loop (App Store blocked)? Fix the card there, outside the Store ✅</li>
+<li>Unexpected charge: an unpaid balance from a failed charge can get combined ⚠️. Check Settings → [your name] → Media &amp; Purchases → Purchase History → "Amount You Owe" 👀</li>
+<li>Purchase history (re-checked Nov 25) ✅: App Store → your photo or initials → Apps &amp; Purchase History → Purchase History → search by amount, change "Last 90 days". Web: <a href="https://reportaproblem.apple.com">https://reportaproblem.apple.com</a> · <a href="https://support.apple.com/118212">https://support.apple.com/118212</a></li>
+</ul>
+    </details>
+
+    <details>
+      <summary>Paramount+ / streaming promo codes</summary>
+      <p class="meta">Jul 4, 2026</p>
+<ul class="steps">
+<li>The App Store "Redeem Offer" screen only takes Apple codes; use <a href="https://www.paramountplus.com">https://www.paramountplus.com</a> in a browser ✅</li>
+<li>Codes are on deal sites (Doctor of Credit, DealNews) 👀</li>
+<li>Let any prior membership lapse first; confirm the price drops before paying ✅</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>Budget spreadsheet (method only)</summary>
+      <p class="meta">Nov 3, 2026 · <a href="https://claude.ai/chat/89803236-0c21-4b3f-bba5-07d4d68d24d3">https://claude.ai/chat/89803236-0c21-4b3f-bba5-07d4d68d24d3</a></p>
+<ul class="steps">
+<li>Claude built a new Excel workbook (no budget file was in Drive) ✅. Tabs: paychecks, quarterly summary, take-home, categorized transactions 👀</li>
+<li>Method 👀<ol class="steps">
+<li>Send statements as PDFs</li>
+<li>Claude pulls out the transactions</li>
+<li>You set the rules with tap-to-answer questions</li>
+<li>The sheet updates once every rule is final</li>
+</ol>
+</li>
+<li>Your rules 👀: own-account transfers aren't spending · mixed-store charges split by % · bars separate from liquor stores · gas station charges split by amount · eating out is one category · a "Paid Back by Work" category · flag unused or duplicate subscriptions</li>
+<li>Finished? ⚠️</li>
+</ul>
+    </details>
+    <p class="group" id="h-life">🏠 Life admin</p>
+
+    <details>
+      <summary>Health + dental insurance</summary>
+      <p class="meta">Verified Nov 22, re-checked Nov 25, 2026 · <a href="https://claude.ai/chat/7f816c48-24f9-4e3c-8157-650722a360cc">https://claude.ai/chat/7f816c48-24f9-4e3c-8157-650722a360cc</a></p>
+<ul class="steps">
+<li>Wisconsin uses HealthCare.gov ✅ <a href="https://healthcare.gov/health-insurance-marketplace/">https://healthcare.gov/health-insurance-marketplace/</a></li>
+<li>2027 open enrollment: Nov 1, 2026 – Jan 15, 2027 ✅</li>
+<li>Enroll by <b>Dec 15</b> → coverage starts Jan 1 ✅</li>
+<li>Enroll Dec 16 – Jan 15 → coverage starts Feb 1 ✅</li>
+<li>After Jan 15 you need a special enrollment reason ✅</li>
+<li>One older third-party page says enrollment ends Dec 15 ⚠️. Safest: enroll by Dec 15</li>
+<li>Free local help: <a href="https://www.healthcare.gov/find-assistance">https://www.healthcare.gov/find-assistance</a> ✅</li>
+<li>Sign up only on the official site, to avoid scams ✅</li>
+<li>Dental options haven't been researched yet ⚠️</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>LLC, brand name, domain + Google Workspace</summary>
+      <p class="meta">Apr 30, 2026 · <a href="https://claude.ai/chat/8f2f4f75-7002-483f-9c2c-5dbdb71db580">https://claude.ai/chat/8f2f4f75-7002-483f-9c2c-5dbdb71db580</a></p>
+<ul class="steps">
+<li>Path 👀: 1) file the LLC 2) get an EIN 3) business bank account (1–3 in order) · 4) branding 5) Carrd portfolio 6) business IG + TikTok (alongside)</li>
+<li>Before filing 👀<ol class="steps">
+<li>File with Wisconsin DFI online (not the Secretary of State); paid ⚠️</li>
+<li>Legal name: "Mikey Face Media LLC"; run the free name check on DFI's OneStop portal</li>
+<li>A real street address, not a PO box; it becomes public record</li>
+<li>Registered agent: you = free, but your address goes public; a paid service shows theirs</li>
+<li>An email you actually check; single-member, member-managed</li>
+</ol>
+</li>
+<li>After filing: an EIN from the IRS (free). An operating agreement isn't required for a solo WI LLC, but banks want one 👀</li>
+<li>Spelling 👀: "Mikey Face Media" for anything people see · "mikeyfacemedia" for handles + the domain · Workspace business name without "LLC"</li>
+<li>Domain: mikeyfacemedia.com; handles @mikeyfacemedia ⚠️ (availability not checked). If .com is taken: .tv → .co → .media; skip hyphens, .net, .biz, .info. Upsell-heavy registrar → Cloudflare Registrar or Porkbun 👀</li>
+<li>Workspace 👀: Business Starter, Annual toggle off (monthly) → "Start a trial" → "Mikey Face Media" → "Just you" → domain step; 14-day trial, then paid; verify the domain → first mailbox → password</li>
+<li>You checked out Workspace + the domain (through Squarespace); billing started May 14, 2026 👀</li>
+<li><span class="tag">To do</span> The domain renews every April; decide by Mar 2027 👀</li>
+<li>Goal: file the LLC by end of 2026 👀</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>Car: 2012 Chevy Impala LTZ</summary>
+      <p class="meta">Oct 20, 2026 · <a href="https://claude.ai/chat/3e5512fe-d0bd-42fe-9f23-0d15d80bec64">https://claude.ai/chat/3e5512fe-d0bd-42fe-9f23-0d15d80bec64</a></p>
+<ul class="steps">
+<li>3.6L V6 (300 hp), 6-speed automatic, FWD, E85-capable, 17-gal tank ✅</li>
+<li>Oil: 6 qt dexos1 5W-30 full synthetic ✅<ul class="steps">
+<li>Change within 600 mi of "Change Engine Oil Soon", and at least once a year 👀</li>
+<li>Reset the oil light: ignition ON, engine off → press the gas pedal to the floor 3× within 5 sec 👀</li>
+<li>Check the dipstick between changes 👀</li>
+</ul>
+</li>
+<li>Tires: P235/50R18 at 30 psi 👀 (confirm on the driver-door sticker)</li>
+<li>Wipers: 22" driver, 21" passenger ✅ · Battery: Group 34 👀</li>
+<li>Transmission fluid (Dexron VI) + spark plugs at 97,500 mi; coolant at 150,000 mi 👀; cabin filter about every 22,500 mi ⚠️</li>
+<li>Free recalls ✅<ul class="steps">
+<li>Ignition key: keep it alone on its ring</li>
+<li>Power steering hose: some cars built mid-2011</li>
+<li><span class="tag">To do</span> Check your VIN with Chevy</li>
+</ul>
+</li>
+<li>Watch for 👀: the traction control light, "Engine Power Reduced", brake issues</li>
+<li>Black leather: damp cloth + mild soap only; no household cleaners or oil conditioners ⚠️</li>
+<li>Rubber floor mats: never stack them; make sure they fit ✅</li>
+<li>Trunk keeps: spare tire, ice scraper, headlamp, chair, tent 👀</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>Selling items online</summary>
+      <p class="meta">Oct 20, 2026 · <a href="https://claude.ai/chat/63823e57-caab-4372-9b5f-d40529bd69a7">https://claude.ai/chat/63823e57-caab-4372-9b5f-d40529bd69a7</a></p>
+<ul class="steps">
+<li>Items 👀: Yamaha ATS-1080 soundbar (cat damage on the grille) · Sherwood Elite fins (L), Akona 6.5mm boots (size 11), blue mesh duffel, Akona boot bag · clear fin bag thrown in free (not selling the mask or snorkel)</li>
+<li>Every listing 👀: brand, model, size, every flaw with a close-up, an Open Water class angle. No certification needed to buy fins or boots ✅</li>
+<li>Photo order 👀: full spread → fins → boots (logo) → duffel → boot bag → fin pocket close-up → peeling close-up → side shot of the warp</li>
+<li>Join groups first: Facebook app → 🔍 → "Wisconsin scuba" and "Milwaukee buy sell" → Groups → Join. Approval can take a day ⚠️</li>
+<li>BEST: Facebook Marketplace, no fees for local pickup ✅<ol class="steps">
+<li>Marketplace → Selling → <b>+ Create listing → One item</b> ✅</li>
+<li>Up to 10 photos 👀</li>
+<li>Title, price, condition "Used – Good" 👀, the closest scuba/sporting goods category ⚠️, description, location</li>
+<li><b>Next → List in more places</b> → pick your groups → <b>Publish</b> 👀</li>
+<li>Groups missing? They're likely pending approval or not buy/sell groups ⚠️. Later: open the listing → Share → Share to a Group 👀</li>
+<li>Leave <b>Promote listing</b> off (gray); it's a paid ad ✅</li>
+</ol>
+</li>
+<li>OfferUp: App Store "OfferUp - Shop. Buy. Sell." ✅ <a href="https://apps.apple.com/app/468996152">https://apps.apple.com/app/468996152</a> → Post tab → photos → category + condition → Set Location → Post 👀. Free for local pickup ✅</li>
+<li>Craigslist: App Store "craigslist" (purple peace sign) 👀. Free for sale-by-owner posts except vehicles ✅ <a href="https://www.craigslist.org/about/help/faqs/fees/">https://www.craigslist.org/about/help/faqs/fees/</a></li>
+<li>Dive shop consignment (optional): Pirates Cove Diving, <a href="https://www.pcdiving.com">https://www.pcdiving.com</a> ⚠️ (not opened)</li>
+<li>Safety 👀: cash at pickup, never text anyone a code, Zelle "upgrade" emails are fake, give your address only to a confirmed buyer</li>
+<li>Once sold, mark it sold everywhere. No bites in 7 days? Sell the items separately ⚠️</li>
+<li><span class="tag">To do</span> Last seen at the Publish step, with 1 of 10 groups showing 👀</li>
+<li>Description to paste (no price):<div class="paste">Used about 5 times in lakes. One fin is slightly warped from storage (pictured). Both buckles click and hold. Includes foot-pocket inserts. Akona 6.5mm molded-sole boots, size 11. Worn 10–20 times as water shoes in lakes and streams. Zippers smooth, no holes or tears. Very minor peeling on the sides. Large blue mesh duffel that holds everything. Perfect condition. Akona mesh boot bag. Great starter set for a scuba Open Water class. Pickup only. Cash at pickup.</div>
+</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>Basement purge / move-out</summary>
+      <p class="meta">Oct 20, 2026 · <a href="https://claude.ai/chat/3db5bcd3-543b-46b1-b532-bc00b317ce7a">https://claude.ai/chat/3db5bcd3-543b-46b1-b532-bc00b317ce7a</a></p>
+<ul class="steps">
+<li>Claude makes the calls through tap-to-answer questions and keeps a running inventory, since long chats blur details 👀</li>
+<li>Scope 👀: under 10 boxes (clothes, camera gear, papers + keepsakes, large canvas prints); purge half or more; about a week</li>
+<li>Bring everything into one area → list it → Claude builds a box map, erring toward keeping things 👀</li>
+<li>Supplies: HDX 27-gal totes from Home Depot ⚠️ (check the app), trash bags, painter's tape, a Sharpie 👀</li>
+<li>Tape off zones: <b>KEEP · SELL · DONATE · GIVE · TRASH</b> 👀</li>
+<li>Sort in this order 👀<ol class="steps">
+<li>Clothes: keep what fits and what you wore this year</li>
+<li>Gear + tech: test it and wipe data ✅; take the keepers upstairs</li>
+<li>Canvases: check the backs for water damage</li>
+<li>Papers last: toss anything moldy ✅</li>
+</ol>
+</li>
+<li>Kitchen: keep the best pot and 4 of each dish 👀</li>
+<li>Pack: label totes, keep them off the floor, fill them full (light bins can float in a flood) ✅</li>
+<li>Out the same day<ol class="steps">
+<li>Goodwill: clothes and shoes; no furniture, no pickup ✅</li>
+<li>Best Buy e-waste: 3 items per household per day ✅</li>
+<li>Sell: list it that night; anything unsold by move day gets donated 👀</li>
+<li>Give: text photos and set a pickup deadline 👀</li>
+</ol>
+</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>Washing the mattress topper</summary>
+      <p class="meta">Oct 20, 2026 · <a href="https://claude.ai/chat/3db5bcd3-543b-46b1-b532-bc00b317ce7a">https://claude.ai/chat/3db5bcd3-543b-46b1-b532-bc00b317ce7a</a> · <a href="https://claude.ai/chat/b46cfe5a-3852-4fdc-ba55-9ffe346d4e9c">https://claude.ai/chat/b46cfe5a-3852-4fdc-ba55-9ffe346d4e9c</a></p>
+<ul class="steps">
+<li>Topper: Blue Ridge Hotel Suite 👀</li>
+<li>Your homemade peroxide + dish soap spray is OK; the tag allows non-chlorine bleach ✅</li>
+<li>Let it sit about 1 hr, a few hrs at most, or it can bleach ✅</li>
+<li>Large-capacity washer only 👀; if yours is too small, a laundromat's big front-loader ✅</li>
+<li>Cold water, gentle cycle, mild detergent 👀, a little less than the normal-load line ✅</li>
+<li>Optional non-chlorine bleach ✅<ul class="steps">
+<li>Clorox 2 liquid: cap to line 1 (HE washer) or line 2 (standard)</li>
+<li>OxiClean powder: scoop to line 1, dissolve it in 16 oz of water, add it to the drum before the topper</li>
+</ul>
+</li>
+<li>Dry on low heat with 2–3 dryer balls; it can take 2–3 cycles 👀</li>
+<li>Squeeze the edges and center. Still damp? Dry it again 👀</li>
+</ul>
     </details>
 
     <details>
       <summary>Cat-pee laundry rescue</summary>
-      <ul class="steps">
-        <li>Dried uric acid needs an enzyme or oxidizing cleaner, not regular detergent ✅</li>
-        <li>Used: LA's Totally Awesome soak + All Free &amp; Clear or Tide Simply, cold water, multiple rounds ✅</li>
-        <li>Skip OxiClean White Revive on darks (fade risk) ✅</li>
-      </ul>
+      <p class="meta">May 1, 2026 · Free</p>
+<ul class="steps">
+<li>Dried uric acid needs an enzyme or oxidizing cleaner, not regular detergent ✅</li>
+<li>What worked: a LA's Totally Awesome soak, then All Free &amp; Clear or Tide Simply, cold water, multiple rounds 👀</li>
+<li>Skip OxiClean White Revive on darks and colors (fade risk) ⚠️</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>Cat rehoming (Loki)</summary>
+      <p class="meta">Jun 18, 2026 · Free</p>
+<ul class="steps">
+<li>Platforms: MADACC Home-to-Home <a href="https://home-home.org/rehome">https://home-home.org/rehome</a> (you control the full bio), Adopt-a-Pet Rehome, Milwaukee Facebook rehoming groups 👀</li>
+<li>Include: a short + long bio, adopter vetting questions, red flags to watch, a rehoming fee ($50–150), a safe meeting/handoff plan ✅</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>Watch Brewers + sports free on Mac</summary>
+      <p class="meta">Oct 27, 2026</p>
+<ul class="steps">
+<li>Brewers (FOX): FOX One 3-day free trial at <a href="https://www.fox.com">https://www.fox.com</a> or <a href="https://www.foxsports.com/live">https://www.foxsports.com/live</a> in Safari ⚠️ cancel within 3 days; not all plans include a trial</li>
+<li>Local FOX6 can't stream the game; it needs FOX One ⚠️</li>
+<li>Thursday Night Football: <a href="https://www.twitch.tv/primevideo">https://www.twitch.tv/primevideo</a>. Free, no signup or card ✅</li>
+</ul>
+    </details>
+
+    <details>
+      <summary>Quick lookups</summary>
+      <p class="meta">Apr 23, 2026 · <a href="https://claude.ai/chat/ed13d606-65f9-4c5b-8558-8bfe19a5ad8d">https://claude.ai/chat/ed13d606-65f9-4c5b-8558-8bfe19a5ad8d</a></p>
+<ul class="steps">
+<li>750 ml = 25.36 fl oz ✅</li>
+<li>Tesla Optimus (April): not deployed or buyable then; now outdated ⚠️</li>
+</ul>
     </details>
   </section>
 </main>
