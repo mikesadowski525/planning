@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Planning</title>
+<meta name="description" content="Ideas, events, goals, and plans.">
+<style>
+  :root {
+    --bg: #f7f7f5;
+    --card: #ffffff;
+    --text: #1d1d1f;
+    --muted: #6b6b70;
+    --line: #e4e4e7;
+    --ideas: #f59e0b;
+    --events: #3b82f6;
+    --goals: #10b981;
+    --plans: #8b5cf6;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  header {
+    padding: 32px 16px 8px;
+    max-width: 760px;
+    margin: 0 auto;
+  }
+  h1 { margin: 0; font-size: 1.9rem; letter-spacing: -0.02em; }
+  header p { margin: 4px 0 0; color: var(--muted); }
+  nav {
+    position: sticky; top: 0; z-index: 1;
+    background: rgba(247,247,245,.92);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
+  }
+  nav ul {
+    list-style: none; margin: 0 auto; padding: 10px 16px;
+    max-width: 760px;
+    display: flex; gap: 6px; overflow-x: auto; justify-content: space-between;
+  }
+  nav a {
+    display: block; padding: 6px 11px; border-radius: 999px;
+    background: var(--card); border: 1px solid var(--line);
+    color: var(--text); text-decoration: none; font-size: .9rem; white-space: nowrap;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 16px; }
+  section {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-top: 4px solid var(--accent);
+    border-radius: 14px;
+    padding: 18px 18px 8px;
+    margin-bottom: 18px;
+    scroll-margin-top: 64px;
+  }
+  section h2 { margin: 0 0 10px; font-size: 1.25rem; display: flex; align-items: center; gap: 8px; }
+  #ideas  { --accent: var(--ideas); }
+  #events { --accent: var(--events); }
+  #goals  { --accent: var(--goals); }
+  #plans  { --accent: var(--plans); }
+  ul.items { list-style: none; margin: 0; padding: 0; }
+  ul.items li { padding: 12px 0; border-top: 1px solid var(--line); }
+  ul.items li:first-child { border-top: 0; }
+  .title { font-weight: 600; }
+  .meta { color: var(--muted); font-size: .9rem; }
+  .tag {
+    display: inline-block; font-size: .75rem; font-weight: 600;
+    padding: 2px 8px; border-radius: 999px;
+    background: color-mix(in srgb, var(--accent) 15%, white);
+    color: color-mix(in srgb, var(--accent) 70%, black);
+    margin-left: 6px; vertical-align: middle;
+  }
+  footer { text-align: center; color: var(--muted); font-size: .85rem; padding: 8px 16px 32px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Planning</h1>
+  <p>Ideas, events, goals, and plans in one place.</p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#ideas">💡 Ideas</a></li>
+    <li><a href="#events">📅 Events</a></li>
+    <li><a href="#goals">🎯 Goals</a></li>
+    <li><a href="#plans">🗺️ Plans</a></li>
+  </ul>
+</nav>
+
+<main>
+  <!-- To edit: change the text inside each <li>. Copy a whole <li>...</li> block to add an item. -->
+
+  <section id="ideas">
+    <h2>💡 Ideas</h2>
+    <ul class="items">
+      <li><div class="title">Idea one <span class="tag">New</span></div><div class="meta">Short description of the idea.</div></li>
+      <li><div class="title">Idea two</div><div class="meta">Short description of the idea.</div></li>
+      <li><div class="title">Idea three</div><div class="meta">Short description of the idea.</div></li>
+    </ul>
+  </section>
+
+  <section id="events">
+    <h2>📅 Events</h2>
+    <ul class="items">
+      <li><div class="title">Event one</div><div class="meta">Date · Location</div></li>
+      <li><div class="title">Event two</div><div class="meta">Date · Location</div></li>
+      <li><div class="title">Event three</div><div class="meta">Date · Location</div></li>
+    </ul>
+  </section>
+
+  <section id="goals">
+    <h2>🎯 Goals</h2>
+    <ul class="items">
+      <li><div class="title">Goal one <span class="tag">In progress</span></div><div class="meta">Target date · How to measure it</div></li>
+      <li><div class="title">Goal two</div><div class="meta">Target date · How to measure it</div></li>
+      <li><div class="title">Goal three</div><div class="meta">Target date · How to measure it</div></li>
+    </ul>
+  </section>
+
+  <section id="plans">
+    <h2>🗺️ Plans</h2>
+    <ul class="items">
+      <li><div class="title">Plan one</div><div class="meta">Next step · Due date</div></li>
+      <li><div class="title">Plan two</div><div class="meta">Next step · Due date</div></li>
+      <li><div class="title">Plan three</div><div class="meta">Next step · Due date</div></li>
+    </ul>
+  </section>
+</main>
+
+<footer>Last updated: November 2026</footer>
+
+</body>
+</html>
