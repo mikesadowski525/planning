@@ -538,13 +538,22 @@
     </details>
 
     <details>
-      <summary>OptiSigns TV video orientation</summary>
+      <summary>OptiSigns video playback (Samsung TVs)</summary>
       <ul class="steps">
-        <li>Problem: videos play sideways or upside down; images display fine ✅</li>
-        <li>Cause: OptiSigns rotates images, not videos 👀</li>
+        <li>Two TVs: Entry 55" CU7000 (rotated 90°), Patio 32" N5300 (rotated 270°) 👀</li>
+        <li>Problem 1: Canva MP4s won't play. Cause: no audio track, so Samsung Tizen rejects them ⚠️</li>
+        <li>Problem 2: videos play sideways or stretched. Cause: OptiSigns rotates images, not videos 👀</li>
+        <li><b>Canva fix</b> ✅
+          <ol class="steps">
+            <li>Build at <b>1920×1080</b> (not 1080×1920), art pre-rotated 90° clockwise, stretched to fill</li>
+            <li>Add a music track with volume near zero. Not muted, so the audio track stays</li>
+            <li>Export at <b>1080p</b>, never 4K (4K fails on the 32")</li>
+          </ol>
+        </li>
+        <li>OptiSigns side: playlist <b>Scale Video → Stretch</b>; keep <b>Scale Image → Fit</b> ✅</li>
         <li>Don't touch the Orientation setting; it's right for images ⚠️</li>
-        <li><b>BEST fix:</b> pre-rotate the video file before upload. Canva: landscape canvas → rotate the clip 90° → test the direction ⚠️ (clockwise vs counterclockwise unconfirmed)</li>
-        <li>If an OptiStick runs the TV: <b>Video Player Setting → Surface View → Texture View</b>. Fixes all videos at once ⚠️ unconfirmed</li>
+        <li>Keep the Ads playlist under 15 items / 150MB (Samsung limit) ⚠️</li>
+        <li>If an OptiStick runs a TV: <b>Video Player Setting → Surface View → Texture View</b> fixes all videos at once ⚠️ unconfirmed</li>
         <li>Cost: free within your existing OptiSigns setup</li>
       </ul>
     </details>
@@ -646,6 +655,48 @@
         <li>Toss any brick that buzzes and barely charges; it's failing ⚠️</li>
         <li>Webcam: skip it. Use iPhone <b>Continuity Camera</b> (free) + a Belkin MagSafe mount ✅</li>
         <li>Prices move. Recheck before buying ⚠️</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Price comparison: clip light + accessories</summary>
+      <ul class="steps">
+        <li>Method: give Claude the product + your ZIP. It compares Walmart, Amazon and Best Buy and tags each 👀/⚠️ ✅</li>
+        <li>Clip-on light: a Neewer-type rechargeable clip light for phone + laptop ✅</li>
+        <li>Webcam: see Fast charger + USB-C picks (use Continuity Camera)</li>
+        <li>Online prices lag. Recheck before buying ⚠️</li>
+        <li>Your rule: USB-C only</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Slow Google Drive uploads</summary>
+      <ul class="steps">
+        <li>Your flow: phone → flash drive → laptop → Drive upload</li>
+        <li>Diagnose: run a speed test on the laptop ✅</li>
+        <li>Example: laptop 400 Kbps up vs phone 52 Mbps on AT&amp;T 5G → home Wi-Fi was the bottleneck, not the laptop, Chrome or flash drive 👀</li>
+        <li>Fix: restart the modem + router first; call Spectrum if it's still slow ✅</li>
+        <li>Chrome vs Safari didn't matter here</li>
+        <li>Cost: free</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Google Drive duplicate + file cleanup</summary>
+      <ul class="steps">
+        <li>Claude can search a Drive folder and trash duplicates. They stay in Trash and can be recovered ✅</li>
+        <li>Watch for partial uploads: a file cut off at an exact size (e.g. 3 MB) is incomplete. Re-upload it ⚠️</li>
+        <li>Keep the full-size copy; trash the smaller partial ✅</li>
+        <li>Cost: free</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Toast POS: discounts</summary>
+      <ul class="steps">
+        <li>Path: <b>Finance panel → scroll to "Related" → Settings → Discounts &amp; promo codes</b> ✅</li>
+        <li>Don't use the similar Settings under "Accounting"; it's the wrong one ⚠️</li>
+        <li>Cost: free within Toast</li>
       </ul>
     </details>
   </section>
